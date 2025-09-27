@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmaia_node=self.webpackChunkmaia_node||[]).push([[981],{42981:(e,t,r)=>{r.r(t),r.d(t,{default:()=>o});var u=r(23029),n=r(92901),o=function(){return(0,n.A)(function e(t){(0,u.A)(this,e),this.root=t},[{key:"$",value:function(e){return this.root.querySelector(e)}},{key:"$$",value:function(e){return this.root.querySelectorAll(e)}}])}()}}]);
