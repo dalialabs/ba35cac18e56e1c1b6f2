@@ -1,0 +1,42 @@
+
+.menu li {
+  display: block;
+}
+
+.menu ul li ul li {
+  clear: both;
+  width: 100%;
+  line-height: 3em;
+  text-align: center;
+}
+
+.menu li:hover {
+  cursor: pointer;
+  background-color: var(--light-purple);
+}
+
+.menu ul li ul {
+  position: absolute;
+  z-index: 200;
+  right: 2em;
+  background-color: #fff;
+  display: none;
+  padding: 1em;
+  border-radius: var(--radius);
+  border: 1px solid  var(--dark-grey);
+}
+
+.menu ul li:hover > ul,
+.menu ul li ul:hover {
+  display: block;
+}
+
+.menu ul li ul li:hover {
+  background-color: var(--lighter-purple);
+}
+
+.menu a {
+  display: block;
+  width: 100%;
+  padding: 0 2em;
+}

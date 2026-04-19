@@ -1,0 +1,407 @@
+.imessage {
+    background-color: #fff;
+    border: 1px solid #e5e5ea;
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    font-family: "SanFrancisco";
+    font-size: 1.25rem;
+    margin: 0 auto 1rem;
+    padding: 0.5rem 1.5rem;
+    height: 75%;
+    width: 95%;
+    overflow-y: scroll;
+}
+
+.imessage > div {
+    position: relative;
+    width: 100%;
+    max-width: 75%;
+    padding: 0.5rem .875rem;
+    border-radius: 1.15rem;
+    line-height: 1.25;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.imessage > div .option {
+    display: block;
+    margin-top: .3rem;
+    opacity: .7;
+}
+
+.imessage > div .option:first-child {
+    margin-top: .6rem;
+}
+
+.imessage > div::before,
+.imessage > div::after {
+    bottom: -0.1rem;
+    content: "";
+    height: 1rem;
+    position: absolute;
+}
+
+.from-me {
+    align-self: flex-end;
+    background-color: #248bf5;
+    color: #fff;
+}
+
+.from-me::before {
+    border-bottom-left-radius: 0.8rem 0.7rem;
+    border-right: 1rem solid #248bf5;
+    right: -0.35rem;
+    transform: translate(0, -0.1rem);
+}
+
+.from-me::after {
+    background-color: #fff;
+    border-bottom-left-radius: 0.5rem;
+    right: -40px;
+    transform: translate(-30px, -2px);
+    width: 10px;
+}
+
+div[class^="from-"] {
+    margin: 0.5rem 0;
+    width: fit-content;
+}
+
+.from-me~.from-me {
+    margin: 0.25rem 0 0;
+}
+
+.from-me~.from-me:not(:last-child) {
+    margin: 0.25rem 0 0;
+}
+
+.from-me~.from-me:last-child {
+    margin-bottom: 0.5rem;
+}
+
+.from-them {
+    align-items: flex-start;
+    background-color: #e5e5ea;
+    color: #000;
+}
+
+.from-them:before {
+    border-bottom-right-radius: 0.8rem 0.7rem;
+    border-left: 1rem solid #e5e5ea;
+    left: -0.35rem;
+    transform: translate(0, -0.1rem);
+}
+
+.from-them::after {
+    background-color: #fff;
+    border-bottom-right-radius: 0.5rem;
+    left: 20px;
+    transform: translate(-30px, -2px);
+    width: 10px;
+}
+
+.submit-success {
+    align-items: flex-start;
+    background-color: #70C9B0;
+    color: #fff;
+    border-radius: 5px !important;
+    width: fit-content !important;
+}
+
+.pursuable {
+    align-items: flex-start;
+    background-color: #f8c359;
+    color: #000;
+    border-radius: 5px !important;
+    width: fit-content !important;
+}
+
+.dead-end {
+    align-items: flex-start;
+    background-color: #FF4567;
+    color: #fff;
+    border-radius: 5px !important;
+    width: fit-content !important;
+}
+
+div[class^="from-"].emoji {
+    background: none;
+    font-size: 2.5rem;
+}
+
+div[class^="from-"].emoji::before {
+    content: none;
+}
+
+.no-tail::before {
+    display: none;
+}
+
+.margin-b_none {
+    margin-bottom: 0 !important;
+}
+
+.margin-b_one {
+    margin-bottom: 1rem !important;
+}
+
+.margin-t_one {
+    margin-top: 1rem !important;
+}
+
+textarea {
+    border: 1px solid #e5e5ea;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: inherit;
+    font-size: 1.25rem;
+    max-width: 97%;
+    overflow-y: scroll;
+    min-width: 97%;
+    max-height: 100px;
+    min-height: 50px;
+}
+
+/* general styling */
+@font-face {
+    font-family: "SanFrancisco";
+    src:
+        url("https://cdn.rawgit.com/AllThingsSmitty/fonts/25983b71/SanFrancisco/sanfranciscodisplay-regular-webfont.woff2") format("woff2"),
+        url("https://cdn.rawgit.com/AllThingsSmitty/fonts/25983b71/SanFrancisco/sanfranciscodisplay-regular-webfont.woff") format("woff");
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen-Sans,
+        Ubuntu,
+        Cantarell,
+        "Helvetica Neue",
+        sans-serif;
+    font-weight: normal;
+    margin: 0;
+    height: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 1rem;
+    height: 90%;
+    text-align: center;
+}
+
+h1 {
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    border-bottom: 1px solid #e5e5ea;
+    color: #666;
+    font-weight: normal;
+    margin-top: 0;
+    padding-bottom: 1.5rem;
+}
+
+.comment {
+    color: #222;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    max-width: 100%;
+    padding: 0;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        margin: 0 0.5rem;
+    }
+
+    .container {
+        padding: 0.5rem;
+    }
+
+    .imessage {
+        font-size: 1.05rem;
+        margin: 0 auto 1rem;
+        max-width: 600px;
+        padding: 0.25rem 0.875rem;
+    }
+
+    .imessage > div {
+        margin: 0.5rem 0;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,500,600,700&display=swap');
+
+.wrapper {
+    display: inline-flex;
+    background: inherit;
+    height: 40px;
+    width: 320px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.wrapper .option {
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0 10px;
+    border: 2px solid lightgrey;
+    transition: all 0.3s ease;
+}
+
+.wrapper .option .dot {
+    height: 20px;
+    width: 20px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    position: relative;
+}
+
+.wrapper .option .dot::before {
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background: #0069d9;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 0.3s ease;
+}
+
+.imessage input, .imessage button {
+    display: none !important;
+}
+
+#system-radio:checked:checked~.system-radio,
+#user-radio:checked:checked~.user-radio {
+    border-color: #0069d9;
+    background: #0069d9;
+}
+
+#system-radio:checked:checked~.system-radio .dot,
+#user-radio:checked:checked~.user-radio .dot {
+    background: #fff;
+}
+
+#system-radio:checked:checked~.system-radio .dot::before,
+#user-radio:checked:checked~.user-radio .dot::before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.wrapper .option span {
+    font-size: 17px;
+    color: #808080;
+}
+
+#system-radio:checked:checked~.system-radio span,
+#user-radio:checked:checked~.user-radio span {
+    color: #fff;
+}
+
+.send-btn {
+    width: 60%;
+    height: 45px;
+    margin: 10px auto;
+    background-color: #248bf5;
+    border: 1px solid;
+    color: #FFF;
+    border-radius: 40px;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.send-btn:focus {
+    background-color: #0069d9;
+}
+
+.form-switch {
+    display: inline-block;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.form-switch i {
+    position: relative;
+    display: inline-block;
+    margin-right: .5rem;
+    width: 46px;
+    height: 26px;
+    background-color: #e6e6e6;
+    border-radius: 23px;
+    vertical-align: text-bottom;
+    transition: all 0.3s linear;
+}
+
+.form-switch i::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 42px;
+    height: 22px;
+    background-color: #fff;
+    border-radius: 11px;
+    transform: translate3d(2px, 2px, 0) scale3d(1, 1, 1);
+    transition: all 0.25s linear;
+}
+
+.form-switch i::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
+    transform: translate3d(2px, 2px, 0);
+    transition: all 0.2s ease-in-out;
+}
+
+.form-switch:active i::after {
+    width: 28px;
+    transform: translate3d(2px, 2px, 0);
+}
+
+.form-switch:active input:checked+i::after {
+    transform: translate3d(16px, 2px, 0);
+}
+
+.form-switch input {
+    display: none;
+}
+
+.form-switch input:checked+i {
+    background-color: #0069d9;
+}
+
+.form-switch input:checked+i::before {
+    transform: translate3d(18px, 2px, 0) scale3d(0, 0, 0);
+}
+
+.form-switch input:checked+i::after {
+    transform: translate3d(22px, 2px, 0);
+}

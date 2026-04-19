@@ -1,0 +1,16 @@
+.cms-site-config-modal .modal-content {
+  margin: 15vh auto;
+}
+
+.cms-site-config-modal .container {
+  flex-direction: column;
+}
+
+.cms-site-config-modal textarea {
+  min-height: 270px;
+  resize: vertical;
+}
+
+.cms-site-config-modal button {
+  width: 215px;
+}

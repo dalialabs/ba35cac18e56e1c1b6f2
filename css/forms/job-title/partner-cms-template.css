@@ -1,0 +1,110 @@
+
+:root {
+    --main-bg: white;
+    --bs-body-bg: #F8F8F8;
+    --bs-secondary-body-bg: white;
+    --btn-bg: #253E69;
+    --btn-bg-dark: #40506d;
+    --dark-blue: #273756;
+    --job-input-theme: #666666;
+    --grey-background: #EDEDED;
+    --dark-grey: #bec3cf;
+    --text-grey-color: #748496;
+    --bs-body-color: #748496;
+    --bs-danger-color: #E61555;
+    --bs-warning-color: #F06B30;
+    --bs-emphasis-color: #253E69;
+    --bs-primary-contrast-color: white;
+    --bs-ternariy-color: rgb(37 62 105 / 23%);
+    --bs-secondary-color: #748496;
+    --bs-heading-color: black;
+    --input-border: 1px solid #ced4da;
+    --input-icon-color: #748496;
+}
+
+[data-bs-theme='dark'] {
+    --main-bg: #2B2B2B;
+    --bs-body-bg: #1F1F1F;
+    --bs-secondary-body-bg: #1F1F1F;
+    --btn-bg: #ADF5FF;
+    --btn-bg-dark: #40506d;
+    --dark-blue: #273756;
+    --job-input-theme: #666666;
+    --grey-background: #2B2B2B;
+    --dark-grey: #bec3cf;
+    --badge-bg: #ADF5FF;
+    --text-grey-color: #9B9B9B;
+    --bs-body-color: white;
+    --bs-emphasis-color: white;
+    --bs-danger-color: #E61555;
+    --bs-warning-color: #F06B30;
+    --bs-primary-contrast-color: #1F1F1F;
+    --bs-ternariy-color: #1F1F1F;
+    --bs-secondary-color: #626262;
+    --bs-heading-color: white;
+    --input-border: 0;
+    --input-icon-color: #ADF5FF;;
+}
+
+
+.input-holder {
+    padding: 0 1rem 0 3.1rem;
+    background: var(--main-bg);
+    border-radius: 1rem;
+    height: 3.5rem;
+    margin-bottom: 0;
+    border: var(--input-border);
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: calc(100% - 4.1rem);
+}
+
+.dropdown-menu {
+    top: 100%;
+}
+
+::placeholder {
+    color: var(--bs-body-color);
+}
+
+.container-element {
+    background-color: var(--main-bg);
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.search-input {
+    background-color: var(--main-bg);
+    overflow: auto;
+    color: var(--bs-body-color);
+    min-width: auto;
+    width: 100%;
+}
+
+.badge {
+    margin: 0 0.5rem 0 0;
+    height: 2rem;
+    align-self: center;
+    background: var(--bs-heading-color);
+    color: var(--bs-emphasis-header-color);
+}
+
+@media screen and(max-width: 992px) {
+    .input-holder {
+        max-width: 14rem;
+    }
+}
+
+.job-title-icon {
+    width: 1.2rem;
+    height: 1.1rem;
+    color: var(--input-icon-color);
+    display: block !important;
+    position: absolute;
+    left: 19px;
+    margin-bottom: 4px;
+}

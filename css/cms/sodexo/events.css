@@ -1,0 +1,252 @@
+
+body:not(header) {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.top-container {
+  position: relative;
+  background: url(/images/spike.png);
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 0;
+}
+
+.top-container-override {
+  height: 190px;
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.top-container-override p {
+  margin-bottom: 0;
+}
+
+.top-container-override h1 {
+  margin-top: 0;
+}
+
+.top-container .container {
+  position: relative;
+  z-index: 2;
+}
+
+.top-container .bg-blue {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #19359b;
+  z-index: 1;
+}
+
+.bg-gray {
+  background: #f6f6f6;
+}
+
+#map {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+.input-button {
+  position: absolute;
+  bottom: 34px;
+  right: 15px;
+  height: 41px;
+  padding: 0 1.7rem;
+}
+
+.near-me-events {
+  display: none;
+}
+
+.clr-primary {
+  color: #19359b !important;
+  border-color: #19359b !important;
+}
+
+.btn-outline-primary:hover,
+.btn-primary {
+  color: #fff !important;
+  background-color: #19359b !important;
+}
+
+.btn-primary:hover {
+  background-color: #1128aa !important;
+}
+
+.inline {
+  display: inline-block !important;
+  width: auto !important;
+}
+
+.btn-rounded {
+  border-radius: 100px !important;
+}
+
+.no-width {
+  width: auto !important;
+}
+
+.active {
+  color: #fff !important;
+  background-color: #19359b !important;
+  border-color: #19359b !important;
+}
+
+.btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.overlap {
+  position: absolute;
+
+  /* top: 500px; */
+  bottom: 0;
+  z-index: 2;
+  background: white;
+
+  /* height : 200px; */
+  width: 100%;
+  margin: 0 auto;
+  opacity: 0.7;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.events-table-title {
+  cursor: pointer;
+}
+
+#register-event-modal .form-control {
+  width: 100%;
+}
+
+#register-event-modal .modal-body {
+  padding: 0;
+}
+
+#register-event-modal .col-md-6 {
+  padding: 70px 40px;
+}
+
+#register-event-modal .col-md-6:last-child {
+  padding: 100px 40px;
+  background: #f7f7f7;
+}
+
+.custom-map-control-button {
+  background-color: #fff;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  padding: 0 0.5em;
+  font: 400 18px Roboto, Arial, sans-serif;
+  overflow: hidden;
+  height: 40px;
+  cursor: pointer;
+}
+
+.custom-map-control-button:hover {
+  background: #ebebeb;
+}
+
+.btn {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.far {
+  margin-right: 8px;
+}
+
+.empty-state {
+  font-size: 90px;
+  color: #ccc;
+}
+
+.mt-7 {
+  margin-top: 7rem !important;
+}
+
+#count-down {
+  font-size: 20px;
+}
+
+.ev-time {
+  float: left;
+  text-align: center;
+  position: relative;
+  padding: 0 16px;
+  color: #101820;
+  display: block;
+  font-size: 1rem;
+  line-height: 20px;
+}
+
+.ev-num {
+  color: #101820;
+  font-size: 2rem;
+  line-height: 44px;
+  padding-right: 0;
+  margin-right: 0;
+  width: auto;
+  height: auto;
+  min-width: 55px;
+}
+
+@media screen and (max-width: 750px) {
+  .input-button {
+    position: absolute;
+    bottom: 9px;
+  }
+
+  .bg-blue {
+    display: none;
+  }
+
+  .top-section {
+    flex-direction: column-reverse;
+  }
+
+  .top-container {
+    background-color: #fff;
+    color: #19359b !important;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .near-me-events {
+    display: block;
+  }
+
+  .mt-mobile {
+    margin-top: 15px;
+  }
+
+  .btn-events-modal {
+    width: 100%;
+  }
+
+  .grey-mobile {
+    color: #333 !important;
+  }
+}

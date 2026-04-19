@@ -1,0 +1,45 @@
+* {
+  font-family: sans-serif;
+}
+
+.dalia-forms-container-bg {
+  position: static;
+  max-width: 100%;
+  height: 100%;
+}
+
+.dalia-button-container {
+  display: none !important;
+}
+
+.dalia-form-footer .form-close {
+  display: none;
+}
+
+.dalia-forms-container {
+  position: static;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  transform: none;
+}
+
+.dalia-loading {
+  margin-top: 50%;
+}
+
+.dalia-loading .dalia-loading-logo {
+  display: none;
+}
+
+.client-jobs__title {
+  font-weight: normal;
+}
+
+.dalia-form .formio-error-wrapper {
+  padding: unset;
+}
+
+.dalia-form-shadow {
+  width: 100%;
+}
