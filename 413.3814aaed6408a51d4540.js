@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmaia_node=self.webpackChunkmaia_node||[]).push([[413],{54413:(e,n,u)=>{u.r(n),u.d(n,{default:()=>i});var t=u(15671),a=u(43144);const i=function(){function e(n){(0,t.Z)(this,e),this.form=n}return(0,a.Z)(e,[{key:"canShow",value:function(){}},{key:"beforeSubmit",value:function(){}}]),e}()}}]);
