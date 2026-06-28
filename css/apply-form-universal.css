@@ -1,0 +1,167 @@
+.eapply-web-container.popup-opened {
+  height: 100%;
+  max-width: unset;
+}
+
+.eapply-popup {
+  max-width: unset;
+}
+
+.eapply-web-container .chat-container .chat-messages .content {
+  padding-right: 0.5rem;
+  padding-left: 1rem;
+  height: 100%;
+}
+
+.eapply-web-container .eapply-popup .popup-header > div:last-child {
+  display: none;
+}
+
+.eapply-web-container.popup-opened .eapply-popup {
+  height: 99%;
+  display: flex;
+  flex-direction: column;
+}
+
+.eapply-web-container .eapply-popup .popup-content {
+  height: unset;
+  overflow: hidden;
+  flex-grow: 1;
+}
+.eapply-web-container .eapply-popup .popup-header {
+  flex: unset;
+  padding: 0 1rem;
+  gap: 12px;
+}
+
+#job-details {
+  height: calc(80% - 4.5em);
+}
+
+.eapply-web-container .chat-container .chat-messages .bubble-container .bubble {
+  border-radius: 0.625rem;
+  background: var(--dalia-apply-system-bubble-background, transparent);
+  border: 1px solid var(--dalia-apply-system-bubble-border, #E1E1E1);
+  font-weight: 600;
+}
+
+.eapply-web-container .chat-container .chat-messages .bubble-container.from-user .bubble {
+  background: var(--dalia-apply-user-bubble-background, var(--primary-color));
+  border: 1px solid var(--dalia-apply-user-bubble-border, transparent);
+  color: var(--dalia-apply-user-bubble-text-color, white);
+}
+
+.bubble-container:not(.from-user) > .bubble {
+  min-width: 100%;
+}
+
+.bubble-container:not(.from-user) > .bubble > div {
+  width: 100%;
+}
+.eapply-web-container .eapply-btn {
+  height: 48px;
+  font-weight: 600;
+  font-size: 14px;
+  background: var(--dalia-apply-submit-btn-background, var(--primary-color)) !important;
+  border: 1px solid var(--dalia-apply-submit-btn-border, transparent) !important;
+  color: var(--dalia-apply-submit-btn-text-color, white) !important;
+}
+
+.eapply-web-container .eapply-btn:hover {
+  background: var(--dalia-apply-submit-btn-hover-background, var(--primary-color)) !important;
+  border: 1px solid var(--dalia-apply-submit-btn-hover-border, transparent) !important;
+  color: var(--dalia-apply-submit-btn-hover-text-color, white) !important;
+}
+
+.eapply-web-container .eapply-btn:disabled,
+.eapply-web-container .eapply-btn.button-disabled {
+  background: var(--dalia-apply-submit-btn-disabled-background, var(--primary-color)) !important;
+  border: 1px solid var(--dalia-apply-submit-btn-disabled-border, transparent) !important;
+  color: var(--dalia-apply-submit-btn-disabled-text-color, white) !important;
+}
+
+.eapply-web-container .eapply-btn.button-clicked {
+  background: var(--dalia-apply-submit-btn-clicked-background, var(--primary-color)) !important;
+  border: 1px solid var(--dalia-apply-submit-btn-clicked-border, transparent) !important;
+  color: var(--dalia-apply-submit-btn-clicked-text-color, white) !important;
+}
+
+.eapply-web-container .chat-container .completed .eapply-btn, .eapply-web-container .eapply-btn.light {
+
+}
+
+
+.eapply-web-container .chat-container .chat-controls {
+  max-height: 4.5rem;
+}
+.eapply-web-container .chat-container .chat-controls .chat-input-container {
+  height: 55px;
+  border-radius: 20px;
+  border: 1px solid #DDD;
+  background: #FBFBFB;
+  justify-content: center;
+  align-items: center;
+}
+.eapply-web-container .chat-container .chat-controls .chat-input-container input {
+  border-radius: unset;
+  border: unset;
+  background: unset;
+}
+
+.eapply-web-container .chat-container .chat-controls .chat-input-container input:disabled {
+  opacity: 0.5 !important;
+  cursor: not-allowed !important;
+}
+
+.eapply-web-container .chat-container .chat-controls .chat-input-container button:hover {
+  opacity: 0.75 !important;
+}
+
+.eapply-web-container .chat-container .chat-messages .bubble-container .bubble input[type=radio] + label {
+  padding: 12px 22px;
+  min-height: 48px;
+  background: var(--dalia-apply-selection-btn-background, white);
+  border: 1px solid var(--dalia-apply-selection-btn-border, var(--primary-color));
+  color: var(--dalia-apply-selection-btn-text-color, var(--primary-color));
+}
+
+.eapply-web-container .chat-container .chat-messages .bubble-container .bubble input[type=radio]:checked + label {
+  background: var(--dalia-apply-selection-active-btn-background, var(--primary-color));
+  border: 1px solid var(--dalia-apply-selection-active-btn-border, var(--primary-color));
+  color: var(--dalia-apply-selection-active-btn-text-color, white);
+}
+
+.eapply-web-container .chat-container .chat-messages .bubble-container .bubble input[type=radio] + label:hover {
+  background: var(--dalia-apply-selection-hover-btn-background, var(--primary-color));
+  border: 1px solid var(--dalia-apply-selection-hover-btn-border, var(--primary-color));
+  color: var(--dalia-apply-selection-hover-btn-text-color, white);
+}
+
+.eapply-web-container .chat-container .chat-messages .bubble-container .bubble input[type=radio]:checked + label:hover {
+  background: var(--dalia-apply-selection-active-hover-btn-background, var(--dalia-apply-selection-hover-btn-background, var(--primary-color)));
+  border: 1px solid var(--dalia-apply-selection-active-hover-btn-border, var(--dalia-apply-selection-hover-btn-border, var(--primary-color)));
+  color: var(--dalia-apply-selection-active-hover-btn-text-color, var(--dalia-apply-selection-hover-btn-text-color, white));
+}
+
+.popup-header .back-btn {
+  display: flex !important;
+  margin: 0;
+}
+
+.popup-header .back-btn.hide {
+  display: none !important;
+}
+
+.eapply-web-container .chat-container .chat-controls .chat-input-container button, .eapply-web-container .chat-container .chat-controls .chat-input-container button:hover  {
+  position: unset;
+  height: 45px;
+  width: 45px;
+  padding: 1rem 1rem !important;
+  margin-right: 4px;
+  aspect-ratio: 1 / 1;
+}
+
+.eapply-web-container .chat-container .chat-controls .chat-input-container button:disabled {
+  opacity: 0.7 !important;
+  cursor: not-allowed !important;
+}

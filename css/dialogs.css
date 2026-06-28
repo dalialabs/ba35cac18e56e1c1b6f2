@@ -1,0 +1,79 @@
+.dialogs-holder {
+  padding: var(--half-padding);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dialogs-holder > div {
+  flex-grow: 1;
+}
+
+.dialog {
+  border: 1px solid var(--dark-grey);
+  border-radius: var(--radius);
+  margin: var(--half-padding);
+  flex-basis: 10%;
+}
+
+.dialog-header {
+  border-bottom: 1px solid var(--dark-grey);
+  padding: 0 var(--half-padding);
+}
+
+.dialog h3,
+.dialog h3 a {
+  padding-left: var(--half-padding);
+  color: var(--lighter-blue);
+}
+
+.dialog-body h3 {
+  margin-bottom: 0;
+}
+
+.dialog-body {
+  padding: var(--half-padding);
+}
+
+.inputs-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputs-row.start {
+  justify-content: flex-start;
+}
+
+.big-checkbox {
+  width: 15px;
+  height: 15px;
+}
+
+input:-webkit-autofill {
+  background-color: #faffbd !important;
+}
+
+.inputs-row .input {
+  flex-grow: 1;
+}
+
+.half-padding {
+  padding: var(--half-padding);
+}
+
+.fb-20,
+.inputs-row .fb-20 {
+  flex-basis: 20%;
+  flex-grow: 2;
+}
+
+.mw-20 {
+  max-width: 20%;
+  min-width: 8em;
+}
+
+.centered-form {
+  max-width: 50em;
+  margin: 1em auto;
+}
