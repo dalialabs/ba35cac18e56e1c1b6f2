@@ -1,0 +1,304 @@
+@import "./cms-base.css";
+
+
+.btn-primary {
+  background-color: var(--btn-bg) !important;
+  border-color: var(--btn-bg) !important;
+}
+
+.btn-success:active, .btn-success:focus {
+  background-color: var(--btn-bg) !important;
+  border-color: var(--btn-bg) !important;
+  box-shadow: none !important;
+}
+
+.btn-secondary {
+  background-color: #EFEFEF !important;
+  border-color: #EFEFEF !important;
+  color: black;
+}
+
+.btn-secondary:hover {
+  color: black;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: var(--btn-bg) !important;
+  border-color: var(--btn-bg) !important;
+}
+
+.btn {
+  border-radius: 12px !important;
+
+}
+
+.navbar-brand img {
+  cursor: default;
+  width: auto;
+}
+
+.to-top {
+  color: var(--btn-bg);
+}
+
+.text-green {
+  color: var(--dark-blue) !important;
+}
+
+
+nav.navbar {
+  box-shadow: 0px 0px 15px #00000029;
+  border: none;
+  padding: 0;
+  width: 100%;
+}
+
+.navbar-brand {
+  width: 100%;
+  margin: auto;
+  padding: 28px 1.3rem;
+}
+
+.modal {
+  position: fixed !important;
+  bottom: 0;
+}
+
+.modal.show .modal-dialog {
+  position: fixed !important;
+  bottom: 0;
+  left: 0;
+  min-width: 100vw;
+}
+
+.job-content {
+  padding-bottom: 7rem;
+}
+
+@media (max-width: 768px) {
+
+  .modal-content {
+    width: 100vw;
+  }
+}
+
+@media (min-width: 576px)  {
+  .navbar-brand {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px)  {
+  .navbar-brand {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px)  {
+  .navbar-brand {
+    max-width: 960px;
+  }
+
+  .job-content {
+    padding-bottom: 2rem;
+  }
+
+  .job-card {
+    position: fixed;
+    flex: 0 0 auto;
+    width: 27%;
+  }
+
+  .job-card .card-body {
+    padding-bottom: 0 !important;
+  }
+
+  .modal {
+    position: absolute !important;
+  }
+
+  .modal.show .modal-dialog {
+    position: absolute !important;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+.job-card table svg {
+  fill:  #5D0C8B !important;
+}
+
+@media (min-width: 1200px)  {
+  .navbar-brand {
+    max-width: 1140px
+  }
+}
+
+@media (min-width: 1400px)  {
+  .navbar-brand {
+    max-width: 1320px;
+  }
+}
+
+body {
+  background: #F4F4F5 0% 0% no-repeat padding-box !important;
+  font-family: "Inter", "Avenir", Courier, monospace !important;
+}
+
+
+.job-title-header {
+  border-bottom: 1px solid #CBCBCB;
+}
+
+.job-title {
+  color: #5D0C8B;
+}
+
+.job-card {
+  border-radius: 37px;
+  box-shadow: 0px 0px 20px #0000001A;
+}
+
+svg {
+  fill: white !important;
+}
+
+.job-card td {
+  color: black;
+  padding: 0.5rem 0;
+  font-size: 14px;
+}
+
+.job-card .card-body {
+  padding: 32px;
+}
+
+.card:hover {
+  transform: none;
+}
+
+.job-card .card-subtitle {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #E3E3E3;
+}
+
+.job-card td span {
+  color:  #898989;
+}
+
+.modal-body {
+  height: 18.5rem;
+  min-height: 15.5rem;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  flex-direction: column;
+  text-align: center;
+}
+
+.job-card .modal-dialog .modal-content {
+  border-radius: 37px;
+}
+
+.apply-section {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.apply-section .card {
+  border-radius: 37px 37px 0 0;
+}
+
+
+.modal {
+  overflow: hidden;
+}
+
+.modal-dialog {
+  bottom: 0;
+  margin-bottom: 0;
+}
+
+.modal.fade .modal-dialog {
+  transform: translate(0,50px);
+  transition: transform 0.15s ease-in;
+}
+
+.modal.show .modal-dialog {
+  transform: none;
+  margin: 0;
+}
+
+.modal-dialog .modal-content {
+  box-shadow: 0px 0px 20px #0000001A;
+  border: none;
+  border-radius: 37px 37px 0px 0px;
+}
+
+
+.animated-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.animated-button button{
+  border-radius: 0 !important;
+}
+
+@keyframes changeWidth {
+  from {
+    width: 5px;
+  }
+
+  to {
+    width: 50px;
+  }
+}
+
+.animated-button .left, .right {
+  position: absolute;
+  animation: changeWidth 1s linear 0s infinite alternate;
+  line-height: 1.5;
+  background-color: var(--btn-bg);
+  border-color: var(--btn-bg);
+  height: 100%;
+  border-radius: 12px 0 0 12px;
+}
+
+
+.animated-button .left {
+  border-radius: 12px 0 0 12px;
+  right: 87%;
+}
+
+
+.animated-button .right {
+  border-radius: 0 12px 12px 0;
+  left: 87%;
+}
+
+
+.job-description div  {
+  color: #898989 !important;
+}
+
+
+.eapply-web-container {
+  display: none !important;
+}
+
+
+.btn-secondary.disabled, .btn-secondary:disabled {
+  background-color: #5D0C8B !important;
+  border-radius: 12px!important;
+  color: #FFFFFF69;
+}
+
+nav .navbar-brand a {
+  pointer-events: none;
+}
