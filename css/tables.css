@@ -1,0 +1,68 @@
+.table-holder table {
+  margin-top: 1em;
+  width: 100%;
+  border-spacing: 0;
+}
+
+.table-holder th {
+  font-size: 1.2em;
+  font-weight: normal;
+  text-align: left;
+}
+
+.table-holder td {
+  height: 4.5em;
+  text-align: left;
+}
+
+.dialogs-holder .table-holder td {
+  vertical-align: bottom;
+}
+
+.table-holder thead th {
+  height: 4.5em;
+  border-bottom: 2px solid var(--light-grey);
+}
+
+.table-holder th:first-child,
+.table-holder td:first-child {
+  padding-left: var(--padding);
+}
+
+.table-holder tr:nth-child(even) {
+  background-color: var(--lighter-purple);
+}
+
+table .input label,
+table .input:focus-within label {
+  display: none;
+}
+
+table .input input {
+  background: none;
+  height: inherit;
+}
+
+table .input input:focus {
+  border: 1px solid var(--light-blue);
+}
+
+.table-holder table.selectable {
+  cursor: pointer;
+}
+
+.table-holder table.selectable tr.selected {
+  background-color: #9fb4c9;
+}
+
+.table-holder .floating {
+  margin: 0 0 3px;
+}
+
+.dataTable-dropdown {
+  display: none;
+}
+
+.no-sort {
+  pointer-events: none;
+}
