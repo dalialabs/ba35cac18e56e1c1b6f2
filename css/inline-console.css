@@ -1,0 +1,93 @@
+body.has-console {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-top: 0;
+  overflow-x: hidden;
+}
+
+body.has-console .cms-console {
+  display: block;
+}
+
+body.has-console > main {
+  overflow: auto;
+}
+
+.cms-console {
+  display: none;
+  background: #202124;
+  color: #E8EAED;
+  border-top: solid thin #494C50;
+  z-index: 99999;
+}
+
+.cms-console.collapsed {
+  height: 4.3rem;
+  overflow: hidden;
+}
+
+.cms-console .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .2rem 0;
+  background: #292A2D;
+  border-bottom: solid thin #494C50;
+}
+
+.cms-console .header a {
+  color: #E8EAED;
+  cursor: pointer;
+  margin: 0 .5rem;
+  text-decoration: none;
+  background: none;
+  opacity: .5;
+}
+
+.cms-console .header a:hover {
+  opacity: 1;
+}
+
+.cms-console .body {
+  max-height: 20rem;
+  padding: 1rem 1rem .5rem;
+  overflow: auto;
+}
+
+.cms-console .body::-webkit-scrollbar-track, .cms-console .body::-webkit-scrollbar
+{
+  width: 12px;
+	background-color: #101113;
+}
+
+.cms-console .body::-webkit-scrollbar-thumb
+{
+	background-color: #555;
+}
+
+.cms-console pre {
+  margin-bottom: 0;
+}
+
+.cms-console pre span {
+  display: block;
+  padding: 0.2rem 0;
+  border-bottom: solid thin rgba(255, 255, 255, .1);
+}
+
+.cms-console textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 2rem;
+  max-height: 10rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, .1);
+  color: #E8EAED;
+  font-size: .875em;
+  border-radius: .5rem;
+  resize: both;
+  border: none;
+  outline: none;
+}

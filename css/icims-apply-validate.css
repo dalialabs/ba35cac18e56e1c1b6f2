@@ -1,0 +1,200 @@
+body {
+    background: #f4f4f8;
+    font-family: 'Poppins', sans-serif;
+}
+
+.validate-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 16px;
+    gap: 24px;
+}
+
+.validate-wrapper .integration-logo {
+    height: 160px;
+    width: auto;
+    display: block;
+}
+
+@media (max-width: 576px) {
+    .validate-wrapper {
+        gap: 16px;
+    }
+
+    .validate-wrapper .integration-logo {
+        height: 110px;
+    }
+}
+
+.validate-card {
+    max-width: 520px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
+    background: #fff;
+}
+
+.validate-card h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    max-width: 22ch;
+}
+
+.validate-card .subtitle {
+    color: #6c757d;
+    margin-bottom: 28px;
+    font-size: 0.95rem;
+}
+
+.validate-card label {
+    font-weight: 500;
+    margin-bottom: 4px;
+    display: block;
+    font-size: 0.9rem;
+}
+
+.validate-card label .req {
+    color: #dc3545;
+    margin-left: 2px;
+}
+
+.validate-card .field {
+    margin-bottom: 16px;
+}
+
+.validate-card .field-hint {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.78rem;
+    color: #6c757d;
+}
+
+.validate-card .company-display {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    padding: 9px 13px;
+    color: #343a40;
+    font-size: 1rem;
+    cursor: not-allowed;
+}
+
+.validate-card .company-display .lock-icon {
+    display: inline-flex;
+    align-items: center;
+    color: #868e96;
+    flex-shrink: 0;
+}
+
+.validate-card .form-control::placeholder {
+    color: #98a2b3;
+    opacity: 1;
+}
+
+.validate-card .form-control.is-invalid {
+    border-color: #dc3545;
+}
+
+.validate-card .invalid-msg {
+    display: none;
+    margin-top: 4px;
+    font-size: 0.8rem;
+    color: #dc3545;
+}
+
+.validate-card .invalid-msg.show {
+    display: block;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    background: #5e3ac9;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background 0.2s, box-shadow 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-submit:hover {
+    background: #4b2fa8;
+}
+
+.btn-submit:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(94, 58, 201, 0.35);
+}
+
+.btn-submit:disabled {
+    background: #a58fd4;
+    cursor: not-allowed;
+}
+
+.btn-submit .btn-spinner {
+    display: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: btn-spin 0.6s linear infinite;
+}
+
+.btn-submit.is-loading .btn-spinner {
+    display: inline-block;
+}
+
+@keyframes btn-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#success-message {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#success-message.show {
+    display: flex;
+}
+
+#success-message h2 {
+    max-width: none;
+    margin-bottom: 12px;
+}
+
+#success-message p {
+    max-width: 34ch;
+}
+
+#success-message .checkmark {
+    font-size: 3.5rem;
+    color: #28a745;
+    margin-bottom: 12px;
+    line-height: 1;
+}
+
+#error-banner {
+    display: none;
+}
