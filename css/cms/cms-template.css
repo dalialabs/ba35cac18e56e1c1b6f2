@@ -1,0 +1,18 @@
+@import "./cms-base.css";
+
+.btn-primary {
+  background-color: var(--btn-bg) !important;
+  border-color: var(--btn-bg) !important;
+}
+
+.navbar-brand img {
+  cursor: pointer;
+}
+
+.to-top {
+  color: var(--btn-bg);
+}
+
+.text-green {
+  color: var(--dark-blue) !important;
+}
