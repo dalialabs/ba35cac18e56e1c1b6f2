@@ -1,0 +1,256 @@
+/* @font-face {
+  font-family: 'Axia';
+  src: url('/fonts/axia/Axia-Regular.otf'), url('/fonts/axia/Axia-Bold.otf');
+} */
+
+:root {
+  --base-color: #26CFBB;
+}
+
+html, body {
+  margin: 0;
+  /* font-family: Axia; */
+  font-family: 'Poppins', sans-serif;
+}
+
+.bg-light {
+  --bs-light-rgb: white;
+}
+
+body > .container {
+  overflow-x: hidden;
+}
+
+.main-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  margin-top: 1rem;
+  background: url(/images/web/intro-bg.png) no-repeat center;
+  background-size: cover;
+  border-radius: 1rem;
+  color: white;
+  overflow: hidden;
+}
+
+.main-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .3);
+  z-index: 1;
+}
+
+.main-section .section {
+  flex: 1;
+  display: flex;
+  z-index: 2;
+}
+
+.main-section .section > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.signup-form {
+  max-width: 27rem;
+  background: var(--base-color);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.signup-form .form-control {
+  border: none;
+  border-radius: 100px;
+}
+
+.signup-form .btn {
+  --bs-btn-bg: white;
+  --bs-btn-color: var(--base-color);
+  --bs-btn-hover-bg: rgba(255, 255, 255, .9);
+  --bs-btn-hover-color: var(--base-color);
+  --bs-btn-active-bg: rgba(255, 255, 255, .7);
+  --bs-btn-active-color: var(--base-color);
+  --theme-primary: var(--base-color);
+  padding: 1rem 2rem;
+}
+
+.signup-form .btn.trans {
+  --bs-btn-bg: rgba(255, 255, 255, .9);
+  --bs-btn-hover-bg: rgba(255, 255, 255, .8);
+  --bs-btn-active-bg: rgba(255, 255, 255, .6);
+}
+
+.signup-form a:not(.btn) {
+  color: white;
+  text-decoration: none;
+}
+
+.signup-form a:not(.btn):hover {
+  color: rgba(255, 255, 255, .9);
+  text-decoration: underline;
+}
+
+.signup-form .alert-danger {
+  padding: 10px 15px;
+  margin: 10px 0;
+  background-color: #d73131;
+  color: white;
+  border-radius: 100px;
+  border: none;
+}
+
+.companies-section {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.splide {
+  margin: 4rem 1rem 0;
+}
+
+.splide__arrows {
+  display: none;
+}
+
+.splide__arrow {
+  position: absolute;
+  background: transparent;
+  border: none;
+  z-index: 1;
+  opacity: .5;
+}
+.splide__arrow:hover {
+  opacity: 1;
+}
+
+.splide__arrow svg {
+  height: 1.5rem;
+}
+
+.splide__arrow--prev {
+  left: -1.8rem;
+  transform: scaleX(-1);
+}
+
+.splide__arrow--next {
+  right: -1.8rem;
+}
+
+.splide__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.splide__slide img {
+  height: 50px;
+}
+
+.splide__slide img[alt="client_logo1"], .splide__slide img[alt="client_logo2"] {
+  height: 40px;
+}
+
+.splide__pagination {
+  display: none;
+}
+
+.location-input button:not(.mapboxgl-ctrl-geocoder--button) {
+  min-width: 10em;
+}
+
+.form-steps .step {
+  display: none;
+}
+
+.form-steps .step.active {
+  display: block;
+}
+
+.password-toggle {
+  position: relative;
+}
+
+.password-toggle input {
+  padding-right: 2.5rem;
+}
+
+.password-toggle svg {
+  position: absolute;
+  bottom: 10px;
+  right: 0.7rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+.password-toggle svg path {
+  stroke: var(--base-color)
+}
+.password-toggle svg:hover {
+  opacity: .7;
+}
+
+input-job-title {
+  --input-bg: white;
+  --bs-border-width: 0;
+  --input-radius: 21px;
+  --badge-radius: 100px;
+}
+
+@media screen and (min-width: 992px) {
+  .signup-form {
+    min-width: 30rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .splide__arrows {
+    display: block;
+  }
+
+  .container {
+      max-width: 100%;
+      padding: 0;
+  }
+
+  .navbar .container {
+      padding: 0 .3rem;
+  }
+
+  .main-section {
+      padding: 3rem 0 0;
+      border-radius: 0;
+  }
+
+  .main-section .section > div:first-child {
+      padding: 0 2rem;
+  }
+
+  .main-section .section > div {
+      align-items: flex-start;
+  }
+
+  .main-section .section {
+      flex-direction: column;
+  }
+
+  .signup-form {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 1.3rem;
+      border-radius: 0;
+  }
+
+  .companies-section {
+      padding: 0 .75rem;
+  }
+}
