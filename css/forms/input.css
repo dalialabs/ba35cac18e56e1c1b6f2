@@ -1,0 +1,13 @@
+.dalia-input-holder {
+  display: flex;
+}
+
+.dalia-input {
+  margin: 0.5em 0;
+  padding: 1em;
+  border: none;
+  background-color:  #f3f3f3;
+  line-height: 2.3;
+  border-radius: 2px;
+  flex-grow: 1;
+}

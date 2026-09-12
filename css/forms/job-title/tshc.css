@@ -1,0 +1,77 @@
+.input-holder {
+    border-radius: 12px;
+    background: white no-repeat url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M21.53 20.47L17.689 16.629C18.973 15.106 19.75 13.143 19.75 11C19.75 6.175 15.825 2.25 11 2.25C6.175 2.25 2.25 6.175 2.25 11C2.25 15.825 6.175 19.75 11 19.75C13.143 19.75 15.106 18.973 16.629 17.689L20.47 21.53C20.616 21.676 20.808 21.75 21 21.75C21.192 21.75 21.384 21.677 21.53 21.53C21.823 21.238 21.823 20.763 21.53 20.47ZM3.75 11C3.75 7.002 7.002 3.75 11 3.75C14.998 3.75 18.25 7.002 18.25 11C18.25 14.998 14.998 18.25 11 18.25C7.002 18.25 3.75 14.998 3.75 11Z" fill="%233D424D"/></svg>') 10px center;
+    padding: 0 8px 0 38px;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    position: relative;
+    width: calc(100% - 46px);
+    border: 0;
+}
+
+.custom-input-holder {
+    border: 1px solid rgba(176, 176, 176, 0.40);
+    background: #FBFBFB no-repeat url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M21.53 20.47L17.689 16.629C18.973 15.106 19.75 13.143 19.75 11C19.75 6.175 15.825 2.25 11 2.25C6.175 2.25 2.25 6.175 2.25 11C2.25 15.825 6.175 19.75 11 19.75C13.143 19.75 15.106 18.973 16.629 17.689L20.47 21.53C20.616 21.676 20.808 21.75 21 21.75C21.192 21.75 21.384 21.677 21.53 21.53C21.823 21.238 21.823 20.763 21.53 20.47ZM3.75 11C3.75 7.002 7.002 3.75 11 3.75C14.998 3.75 18.25 7.002 18.25 11C18.25 14.998 14.998 18.25 11 18.25C7.002 18.25 3.75 14.998 3.75 11Z" fill="%233D424D"/></svg>') 10px center;
+    border-radius: 12px;
+}
+
+.search-input {
+    color: #9B9B9B;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.14px;
+    text-transform: capitalize;
+    height: auto;
+    background: transparent;
+    padding-right: 0.5rem;
+    width: auto;
+    min-width: auto;
+}
+
+.search-input::placeholder  {
+    color: #9B9B9B;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.14px;
+    text-transform: capitalize;
+}
+
+.active {
+    background-color: var(--btn-bg) !important;
+}
+
+.dropdown-menu {
+    left: 0;
+    border-radius: 0 0 0.25rem 0.25rem;
+    z-index: 9999;
+    max-width: 100%;
+    width: max-content;
+    margin-left: 60px;
+    top: 100%;
+}
+
+.badge {
+    padding:0.1em 0.6em;
+    color: white;
+    background-color: var(--job-input-theme);
+    margin: 4px;
+    font-size: 14px;
+    height: min-content;
+    align-self: center;
+}
+
+.container-element {
+    display: flex;
+    height: 100%;
+    overflow: auto;
+    cursor: text;
+    overflow: hidden;
+    overflow-x: auto;
+}
