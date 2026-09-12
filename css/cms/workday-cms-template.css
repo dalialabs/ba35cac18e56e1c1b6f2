@@ -1,0 +1,567 @@
+@import "./cms-base.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --main: #243759;
+  --main-bg: #f6f7f9;
+  --btn-bg: #243757;
+  --btn-bg-dark: #40506d;
+  --dark-blue: #273756;
+  --job-input-theme: #666666;
+  --grey-background: rgb(240, 241, 242);
+  --job-width: 708px;
+}
+
+body {
+  height: 100vh;
+}
+
+main {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.container-sm {
+  max-width: 1216px !important;
+}
+
+.btn-primary {
+  background-color: var(--btn-bg) !important;
+  border-color: var(--btn-bg) !important;
+}
+
+.navbar-brand img {
+  height: auto;
+  margin: 0px 24px;
+  max-width: 159.059px;
+  min-width: 134.588px;
+  visibility: visible;
+  width: auto;
+}
+
+.to-top {
+  color: var(--btn-bg);
+}
+
+.text-green {
+  color: var(--dark-blue) !important;
+}
+
+input-job-title {
+  height: 40px;
+  max-height: 40px;
+  min-height: 40px;
+  width: 91.66666667% !important;
+}
+
+nav.navbar {
+  position: static;
+  padding: 12px 0;
+  border-bottom: none;
+}
+
+body, .cms-navbar {
+  background-color: var(--grey-background) !important;
+  padding-top: 0;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+header {
+  position: relative !important;
+}
+
+
+.action-btn {
+  cursor: pointer;
+  border-radius: 9.0072e15px;
+  font-size: 14px;
+  height: 40px;
+  color: rgb(255, 255, 255);
+  padding: 6px 24px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: rgb(255, 255, 255);
+  box-sizing: border-box;
+  padding: 24px 0;
+  border-bottom: 1px solid rgb(206, 211, 217);
+}
+
+#search-input {
+  height: 40px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  font-size: 0.875rem;
+  background-color: var(--grey-background);
+  border: solid thin var(--grey-background);
+  max-height: 40px;
+  min-height: 40px;
+}
+
+#search-input:hover {
+  border: solid thin black;
+}
+
+#search-input input {
+  margin: 2px 3px 3px;
+}
+
+#search-input input, .mapboxgl-ctrl-geocoder {
+  background: var(--grey-background);
+}
+
+.card {
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+.job-list {
+  width: 480px;
+}
+
+.clear-btn {
+  all: unset;
+}
+
+.logo {
+  max-width: 128px;
+  max-height: 64px;
+}
+
+.job-container .close-btn {
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  right: 0;
+  top: 0;
+  vertical-align: middle;
+  overflow: hidden;
+  background: transparent;
+  transition: box-shadow 120ms linear 0s, border 120ms linear 0s, background-color 120ms linear 0s, color 120ms linear 0s;
+  height: 40px;
+  color: rgb(0, 0, 0);
+  box-sizing: border-box;
+  border-radius: 999px;
+  min-width: 40px;
+  padding: 0px;
+  border: 0px;
+  font-size: 28px;
+  font-weight: 300;
+  float: right;
+}
+
+.job-container .close-btn:hover {
+  background-color: rgb(232, 235, 237);
+}
+
+#job-details {
+  height: 100vh;
+  width: 0;
+  overflow: hidden;
+  transition: width .1s ease-in-out;
+}
+
+#job-details.show {
+  width: var(--job-width);
+}
+
+#job-details  .close-btn {
+  display: inline-flex !important
+}
+
+#job-details .job-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: var(--job-width);
+  max-width: 100%;
+}
+
+.pagination-btn {
+  all: unset;
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  margin: 0 0.1rem;
+  font-size: 0.875rem;
+  color: rgb(51, 51, 51);
+  background-color: white !important;
+  min-width: 32px;
+  border-radius: 999px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.pagination-btn:not(.current-page):hover {
+  background-color: #e8ebed !important;
+  color: #333333;
+}
+
+.current-page {
+  background-color: black !important;
+  color: white;
+  font-weight: bold;
+}
+
+.selected-filters-container .selected-filter {
+  background: var(--job-input-theme);
+  cursor: pointer;
+  border: 1px solid rgb(123, 133, 143);
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: rgb(232, 235, 237);
+  font-weight: 500;
+  color: rgb(51, 51, 51);
+  padding: 0px 6px 0px 12px;
+}
+
+.mobile-search-popup {
+  box-shadow: 0 5px 2px -2px rgb(0 0 0 / 20%);
+}
+
+.search-bar {
+  z-index: 99;
+}
+
+.filtration-inputs-container {
+  z-index: 1050;
+}
+
+.mapboxgl-ctrl-geocoder--button {
+  background: #f0f1f2;
+}
+
+
+.main-job-container {
+  max-width: 1248px;
+}
+
+input {
+  height: 30px;
+  border: none;
+}
+input:active , input:focus-visible {
+  border: none;
+  outline: none;
+}
+
+#job-details header,  #job-details .cover-image-container, #job-details nav.navbar  {
+  display: none;
+}
+
+.cover-image-container {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 32px;
+  aspect-ratio: 2.5;
+}
+
+.cover-image-container img {
+  height: auto;
+  object-fit: cover;
+  left: 50%;
+  margin: 0px auto;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.jobSearchPage {
+  background: var(--grey-background);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0px auto;
+    max-width: 1216px;
+    width: 100%;
+}
+
+.inner-container {
+  overflow: auto;
+  max-height: 100vh;
+  padding: 24px 40px;
+}
+
+.jobs-container .active {
+  background: var(--grey-background);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 4px;
+}
+
+.jobs-container .job-title:hover {
+  background-color: #f0f1f2;
+}
+
+.job-description h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.job-description h2 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.job-description p:empty {
+  min-height: 21.44px;
+}
+
+.job-description p {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+}
+
+.site-header {
+  border-top: 4px solid var(--main);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0px 20px;
+  padding: 0px 4px;
+  width: auto;
+  position: relative;
+  white-space: nowrap;
+  font-weight: bold !important;
+}
+
+.nav-link:not(.menu-float):hover::after {
+  bottom: -33px;
+  height: 4px;
+  background-color: var(--main);
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0px;
+}
+
+.nav-link:hover:not(.nav-active) {
+  color: black !important;
+}
+
+
+footer {
+  background: var(--grey-background);
+  height: auto;
+}
+
+footer  .social-links {
+  display: flex;
+}
+
+footer .innrerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .copy-right {
+  font-size: 12px;
+  font-size: 10px;
+  color: rgb(73, 73, 73);
+}
+
+footer hr.line {
+  flex: 1;
+  width: auto;
+  height: 1px;
+  background-color: rgb(223, 226, 230);
+  opacity: 1;
+}
+
+i.circle-icon {
+  color: white !important;
+  background-color: rgb(123, 133, 143);
+}
+
+.dropdown-menu {
+  font-size: 0.9rem;
+}
+
+.fa-linkedin:hover {
+  background: rgb(0, 101, 161);
+}
+
+.fa-facebook:hover {
+  background: rgb(73, 103, 169);
+}
+
+.twitter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.twitter svg {
+  width: 15px;
+  height: auto;
+}
+
+.twitter:hover {
+  background: black;
+}
+
+.fa-youtube:hover {
+  background: red;
+}
+
+.fa-google-plus:hover {
+  background: rgb(221, 75, 57)
+}
+
+.fa-external-link {
+  color: #7b858f;
+  font-size: 0.9rem;
+}
+
+h2.job-title {
+  font-size: 24px;
+}
+
+.job-title-container {
+  padding: 32px 40px !important;
+}
+
+#job-details .job-external-url {
+  display: block !important;
+}
+
+.job-popup-filtration {
+  position: static;
+}
+
+
+.job-popup-filtration .dropdown-toggle {
+  color: #333333;
+  font-weight: bold;
+  border: 2px solid #ced3d9;
+}
+
+.job-popup-filtration .dropdown-toggle:active, .job-popup-filtration .dropdown-toggle:focus {
+  color: black;
+  background-color: white;
+  border-color: black;
+  box-shadow: none;
+}
+
+.navbar-light .collapse:not(.show) .navbar-nav .nav-item.menu-float {
+  display: flex;
+  position: absolute;
+  top: 0.5rem;
+  right: 1.2rem;
+  margin-right: 0;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+}
+
+.navbar-light .collapse:not(.show) .navbar-nav .nav-item.menu-float::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: .2rem;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgY2xhc3M9IndkLWljb24tdXNlciB3ZC1pY29uIiBmb2N1c2FibGU9ImZhbHNlIiByb2xlPSJwcmVzZW50YXRpb24iIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGcgZmlsbC1ydWxlPSJldmVub2RkIiBjbGFzcz0id2QtaWNvbi1jb250YWluZXIiPjxwYXRoIGQ9Ik0yMCAyMC40OTFhLjUwMy41MDMgMCAwIDEtLjQ5Ni41MDVINC40OTZBLjQ5My40OTMgMCAwIDEgNCAyMC40OXYtMS40OTVDNCAxNiA2LjI0NiAxMy44IDguNzU2IDEyLjY4MyA3LjY4MiAxMS42NzUgNyAxMC4xNzQgNyA4LjUgNyA1LjQ2MiA5LjIzOSAzIDEyIDNzNSAyLjQ2MiA1IDUuNDk5YzAgMS42NzUtLjY4IDMuMTc1LTEuNzU1IDQuMTgzQzE3Ljc1OCAxMy43OTcgMjAgMTUuOTk1IDIwIDE4Ljk5NnYxLjQ5NXpNNi4wODMgMTguOTk2SDE4YzAtMi45OTYtMi41LTQuOTk5LTYtNC45OTlzLTYgMi4wMDMtNS45MTcgNXpNMTIgMTEuOTk4YzEuNjU3IDAgMy0xLjU2NyAzLTMuNUMxNSA2LjU2NyAxMy42NTcgNSAxMiA1UzkgNi41NjYgOSA4LjQ5OWMwIDEuOTMyIDEuMzQzIDMuNDk5IDMgMy40OTl6IiBjbGFzcz0id2QtaWNvbi1maWxsIj48L3BhdGg+PC9nPjwvc3ZnPg==);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.search-rounded-btn {
+  padding: 0 10px;
+}
+
+.search-container {
+  flex: 1;
+}
+
+
+@media screen and (max-width: 1200px ) {
+  .job-popup-filtration {
+    position: fixed !important;
+  }
+
+  .filtration-inputs-container {
+    z-index: auto;
+  }
+
+  .job-popup-filtration .dropdown-menu {
+    display: block;
+    visibility: visible;
+    border: none;
+    width: 100%;
+    font-size: 1em;
+    top: 0;
+    position: static;
+  }
+
+  .job-list {
+    width: 100%;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    padding: 1em;
+  }
+
+  .nav-link:hover::after {
+    height: 0 !important;
+  }
+}
+
+.mapboxgl-ctrl-geocoder--input {
+  height: 35px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-width: 2px;
+}
+
+.btn-primary:hover {
+  background: white !important;
+  color: var(--btn-bg);
+}
+
+.details-logo {
+  width: 128px;
+  height: 42px;
+}
+
+.fs-7 {
+  font-size: .85rem !important;
+}
+
+.wd-icon-background {
+  fill: transparent;
+}
+
+.wd-icon-fill, .wd-icon-accent, .wd-icon-accent2 {
+  fill: #7b858f;
+}
+
+.wd-icon-location {
+  min-width: 24px;
+}
+
+.wd-icon-fill:hover {
+  fill: #7b858f !important;
+}

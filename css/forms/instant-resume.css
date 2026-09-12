@@ -1,0 +1,748 @@
+/* stylelint-disable no-descending-specificity */
+* {
+  font-family: 'Work Sans', sans-serif;
+}
+
+:host {
+  --white: #fff;
+  --text-dark: #292e33;
+  --light-grey: #f4f4f4;
+  --dark-grey: #b4b4b4;
+  --form-control-disabled: #ccc;
+  --lighter-purple: #f5f5ff;
+  --purple: #5c00f5;
+  --light-purple: #886bff;
+  --dark-purple: #5320be;
+  --font-weight-600: 600;
+  --text-danger: #f94a23;
+  --text-green: #0dc7b1;
+}
+
+body {
+  touch-action: none;
+}
+
+.no-border {
+  border: 0;
+  box-shadow: none;
+  outline: none;
+}
+
+.loading {
+  overflow: hidden;
+}
+
+.loading::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--white);
+  z-index: 100;
+}
+
+.loading::after {
+  content: '';
+  border: 5px solid #f3f3f3;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  border-top: 5px solid var(--light-purple);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 46%;
+  z-index: 101;
+}
+
+.clr-purple {
+  color: var(--purple);
+}
+
+.clr-green {
+  color: var(--text-green);
+}
+
+.formio-form,
+.formio-form > div,
+.wizard-page > .form-group:first-child {
+  position: sticky;
+  top: 0;
+  z-index: 14;
+}
+
+.dalia-form-shadow {
+  position: relative;
+  padding: 0 2.5em 0;
+}
+
+.form-header {
+  margin: 0 -2.5rem;
+}
+
+.dalia-logo-image {
+  margin: 0;
+  height: 2rem;
+}
+
+.dalia-resume-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--light-grey);
+  padding: 0.5rem 1.1rem;
+  align-items: center;
+}
+
+.dalia-resume-header span {
+  font-weight: var(--font-weight-600);
+  color: var(--purple);
+}
+
+.stepper-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 1.5rem;
+  margin: 1.25rem 0;
+}
+
+.stepper-container > div {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+}
+
+.stepper-container > div::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(50% - 2px);
+  width: 100%;
+  height: 4px;
+  background-color: var(--light-grey);
+  z-index: 1;
+}
+
+.stepper-container > div span i {
+  font-style: normal;
+  font-weight: var(--font-weight-600);
+  font-size: 1.15rem;
+}
+
+.stepper-container > div span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  background: var(--light-grey);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.stepper-container > div span.active {
+  color: var(--purple);
+  font-weight: bold;
+}
+
+.header-text {
+  font-weight: var(--font-weight-600);
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.dalia-form .form-control {
+  background-color: var(--white);
+  border-color: var(--text-dark);
+}
+
+.dalia-form .form-control .is-invalid {
+  border-color: var(--text-danger);
+}
+
+.formio-errors .error {
+  color: var(--text-danger);
+  font-weight: var(--font-weight-600);
+}
+
+.col-form-label {
+  padding-bottom: 0;
+  color: var(--text-dark);
+  font-weight: var(--font-weight-600);
+}
+
+.location-input button {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: gray;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  line-height: 61px;
+  z-index: 1;
+}
+
+.location-input button img {
+  margin-left: 0.6rem;
+}
+
+.mapboxgl-ctrl-geocoder .mapboxgl-ctrl-geocoder--pin-right > * {
+  height: auto;
+  line-height: 20px;
+}
+
+.btn-wizard-nav-submit {
+  display: none;
+}
+
+.dalia-form .formio-component-advance > button {
+  border-color: var(--dark-purple);
+  border-radius: 5px;
+  width: 100%;
+  height: 55px;
+  font-size: 1.1rem;
+  margin-top: 0.9rem;
+}
+
+.dalia-form .formio-component-advance > button:not(.dalia-form-prev, .dalia-outline-btn) {
+  background-color: var(--dark-purple);
+  color: var(--white);
+}
+
+.dalia-form .formio-component-advance > button:hover {
+  background-color: var(--dark-purple);
+  border-color: var(--dark-purple);
+}
+
+.mapboxgl-ctrl-geocoder--icon-close {
+  display: none;
+}
+
+.powered-by {
+  font-weight: var(--font-weight-600);
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(.dalia-form-prev, .dalia-outline-btn):active:focus {
+  background-color: var(--dark-purple);
+  border-color: var(--dark-purple);
+  box-shadow: none;
+}
+
+.form-control.is-invalid {
+  border-color: var(--text-danger);
+}
+
+.dalia-button-container {
+  background-color: var(--dark-purple);
+  border-color: var(--dark-purple);
+}
+
+.dalia-form-prev,
+.dalia-outline-btn {
+  background-color: var(--white);
+  color: var(--dark-purple);
+  margin-right: 0.5rem;
+}
+
+.dalia-form-prev:hover,
+.dalia-outline-btn:hover {
+  color: var(--white);
+}
+
+.view-resume-btn {
+  background-color: var(--white);
+  color: var(--dark-purple);
+  margin-right: 0.5rem;
+  border: none;
+  outline: none;
+}
+
+.btn-group {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.col-xs-9 {
+  width: calc(100% - 113px);
+}
+
+.location-input {
+  position: relative;
+  display: flex;
+  flex-wrap: unset;
+  background: url(/images/icon-location.svg) no-repeat scroll 14px center, white;
+  padding-left: 33px;
+  border: 1px solid;
+  border-radius: 7px;
+}
+
+.location-input > div:first-child {
+  flex: 1;
+}
+
+.mapboxgl-ctrl-geocoder {
+  font-family: inherit;
+  min-width: auto;
+}
+
+.mapboxgl-ctrl {
+  background: var(--white);
+}
+
+.mapboxgl-ctrl-geocoder--icon-search {
+  display: none;
+  position: absolute;
+  top: 13px;
+  left: 12px;
+  width: 23px;
+  height: 23px;
+}
+
+.act-label input {
+  text-align: center;
+  border: none;
+  font-size: 1rem !important;
+  height: 0 !important;
+}
+
+.dalia-form .mapboxgl-ctrl-geocoder input {
+  background-color: var(--white);
+  padding: 0;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.form-check {
+  padding-left: 0.4rem;
+  margin-top: 1rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--form-background);
+  font: inherit;
+  color: currentColor;
+  width: 2.2em;
+  height: 2.2em;
+  margin-top: 0;
+  margin-left: 0;
+  border: 1px solid currentColor; /* transform: translateX(0.925em); */
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"] + span,
+input[type="radio"] + span {
+  position: relative;
+}
+
+input[type="checkbox"] + span::before,
+input[type="radio"] + span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0.55em;
+  width: 1.1em;
+  height: 1.1em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  -webkit-clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  background-color: black;
+}
+
+input[type="checkbox"]:checked + span::before,
+input[type="radio"]:checked + span::before {
+  transform: scale(1);
+}
+
+input[type="checkbox"]:disabled,
+input[type="radio"]:disabled {
+  --form-control-color: var(--form-control-disabled);
+
+  color: var(--form-control-disabled);
+  cursor: not-allowed;
+}
+
+.custom-check-list .form-check label {
+  position: relative;
+  height: 2.2rem;
+  margin-top: 0.1rem;
+}
+
+.custom-check-list .form-check label span {
+  font-size: 1em;
+  padding-left: 2.8rem;
+  line-height: 2.4rem;
+}
+
+.custom-check-list .radio-selected {
+  background-color: var(--dark-purple);
+  color: var(--white);
+}
+
+.custom-check-list .radio-selected input[type="checkbox"],
+.custom-check-list .radio-selected input[type="radio"] {
+  background-color: var(--white);
+}
+
+div.form-check.checkbox > label > span {
+  padding-left: 2.8rem;
+  line-height: 36px;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.suggestions {
+  position: absolute;
+  left: -2.1rem !important;
+  top: 3.1rem !important;
+  width: calc(100% + 2.15rem) !important;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  border-image: initial;
+  border-top: none;
+  border-radius: 0 !important;
+}
+
+.use-location-wrapper {
+  position: absolute;
+  right: 0;
+  z-index: 12;
+}
+
+.page2-start {
+  margin: 8rem 0;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.custom-validation {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: #dc3545;
+}
+
+.d-none {
+  display: none;
+}
+
+.dalia-form-footer {
+  display: none;
+}
+
+.card {
+  background: var(--light-grey);
+}
+
+.mb-5 {
+  margin-bottom: 5.5rem;
+}
+
+.mt-4 {
+  margin-top: 4rem !important;
+}
+
+.fw-bold {
+  font-weight: var(--font-weight-600);
+}
+
+.fs-0-8 {
+  font-size: 0.8rem;
+}
+
+.fs-1 {
+  font-size: 1rem;
+}
+
+.fs-1-1 {
+  font-size: 1.1rem;
+}
+
+.fs-1-5 {
+  font-size: 1.5rem;
+}
+
+.fs-2 {
+  font-size: 2rem;
+}
+
+.fs-3 {
+  font-size: 3rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+table,
+table tr,
+table td {
+  border: none !important;
+}
+
+i.fa.fa-times-circle-o::before {
+  content: "\f00d";
+}
+
+i.fa.fa-plus {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  color: var(--dark-purple);
+}
+
+i.fa.fa-plus::before {
+  content: "\f055";
+}
+
+.add-bullet .formio-button-add-row {
+  width: 100%;
+  background-color: var(--white) !important;
+  border-color: var(--dark-grey) !important;
+  color: black;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.add-bullet .formio-button-remove-row {
+  border-radius: 2rem;
+}
+
+.custom-check-list .form-check {
+  border: 1px solid black;
+  height: 55px;
+  padding: 0.5rem 2.1rem;
+  border-radius: 2rem;
+}
+
+.fixed-bottom {
+  position: sticky;
+  margin-bottom: -1rem;
+  margin-top: 2rem;
+  padding: 1rem 1rem 0;
+  background: white;
+  box-shadow: 0 -2px 10px 0 rgb(0 0 0 / 41%);
+  width: calc(100% + 5rem);
+  margin-left: -2.5rem;
+}
+
+.resume-intro {
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 1.4rem;
+  min-height: 4rem;
+}
+
+.resume-intro img {
+  height: 7rem;
+}
+
+.mt-10 {
+  margin-top: 10rem;
+}
+
+.resume-sample {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.resume-sample img {
+  max-width: 100%;
+  max-height: 24rem;
+}
+
+.resume-sample::after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+.sample-top {
+  transform: translate(-1rem, 2.1rem);
+}
+
+.sample-bottom {
+  z-index: 1;
+  transform: translate(1rem, -2rem);
+  margin-top: 50px;
+}
+
+.loading-tip {
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 10rem;
+  text-align: center;
+}
+
+.loading-tip img {
+  height: 6rem;
+}
+
+.loading-tip + div {
+  margin-top: 17rem;
+}
+
+.choices__list--multiple .choices__item {
+  background: var(--dark-purple);
+  border-color: var(--purple);
+}
+
+.is-highlighted {
+  background-color: var(--purple) !important;
+  border-color: var(--purple) !important;
+}
+
+.choices__button {
+  border-left-color: var(--white) !important;
+}
+
+.text-area textarea {
+  height: auto;
+  min-height: 10rem;
+  max-height: 10rem;
+  resize: none;
+}
+
+.date-selector {
+  height: 70px;
+}
+
+.date-selector select {
+  width: calc(100% - 1.9rem);
+}
+
+@media screen and (max-width: 598px) {
+  .location-input > div:nth-child(2) > .formio-component,
+  .location-input > div:nth-child(2) > .formio-component > div {
+    height: 100%;
+  }
+
+  .location-input button span {
+    display: none;
+  }
+
+  .custom-check-list .form-check label span {
+    font-size: 0.9em;
+  }
+
+  .custom-check-list .form-check {
+    padding: 0.5rem 1rem;
+  }
+
+  .date-selector {
+    height: 300px;
+  }
+
+  div.lock-bottom {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 0.9rem 2rem;
+    background: white;
+    margin-bottom: 0;
+    z-index: 1;
+  }
+
+  div.lock-bottom button {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1156px) {
+  .dalia-form {
+    width: 55rem;
+  }
+
+  .dalia-forms-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    transform: none;
+    top: 0;
+    height: 100%;
+  }
+}
+
+@media (max-height: 750px) {
+  .header-text,
+  .text-center,
+  .form-text,
+  label {
+    font-size: 0.8rem !important;
+  }
+
+  .fs-1-5 {
+    font-size: 0.8rem;
+  }
+
+  .fs-1-1 {
+    font-size: 0.9rem;
+  }
+
+  .dalia-form .formio-component-advance > button {
+    border-color: var(--dark-purple);
+    border-radius: 5px;
+    width: 100%;
+    height: 44px;
+    font-size: 1rem;
+    margin-top: 0.9rem;
+  }
+
+  .resume-intro img {
+    height: 6rem;
+  }
+
+  .mt-10 {
+    margin-top: 8rem;
+  }
+}
+
+/* stylelint-enable no-descending-specificity */
