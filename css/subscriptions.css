@@ -1,0 +1,28 @@
+h1 {
+  text-align: center;
+}
+
+b {
+  color: #6236ff;
+}
+
+button {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+#navigation,
+#message,
+.input {
+  display: none;
+}
+
+#content,
+p {
+  margin-top: 0;
+}
+
+.centered-form {
+  background: #fff;
+  margin: auto;
+}
