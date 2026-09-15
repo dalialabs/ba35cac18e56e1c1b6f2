@@ -1,0 +1,131 @@
+.dropdown-menu {
+  width: 100%;
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  min-width: 11rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 0.25rem 0.25rem;
+  margin-left: calc(-1rem + 1px);
+  box-sizing: border-box;
+  border-top: none;
+}
+
+.input-holder {
+  margin-bottom: 1rem;
+  display: block;
+  padding-left: 0.9rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2;
+  color: #212529;
+  background-color: #f3f3f3;
+  background-clip: padding-box;
+  border: 1px solid #f3f3f3;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  font-family: inherit !important;
+}
+
+.active {
+  background-color: #29379d !important;
+}
+
+.dropdown-item {
+  display: block;
+  width: calc(100% - 2rem);
+  padding: 0.25rem 1rem;
+  clear: both;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  text-transform: capitalize;
+}
+
+.dropdown-item:not(.active) strong {
+  color: black;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: #1e2125;
+  background-color: #e9ecef;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  background-color: #29379d;
+}
+
+.dropdown-item.active strong {
+  color: white;
+}
+
+.dropdown-item.disabled,
+.dropdown-item:disabled {
+  color: #adb5bd;
+  pointer-events: none;
+  background-color: transparent;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.05em 0.6em;
+  color: #f8f9fa;
+  background-color: #29379d;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  margin-top: 0.7rem;
+}
+
+.badge i {
+  margin-left: 7px;
+  cursor: pointer;
+}
+
+.search-input {
+  border: 0;
+  outline: 0;
+  max-width: 100%;
+  background-color: #f3f3f3;
+  font-size: 14px;
+  line-height: 3em;
+  height: 3.5em;
+  color: #495057;
+  min-width: 10rem;
+}
+
+.badge span {
+  margin-right: 5px;
+}
+
+.d-none {
+  display: none;
+}
