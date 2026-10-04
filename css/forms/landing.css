@@ -1,0 +1,199 @@
+:host {
+  --brand: #7410ed;
+  --accent: #2654c9;
+  --content: #f3f3f4;
+  --label: #888a8d;
+  --text: #454954;
+  --border: #ced4da;
+  --white: #fff;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+.dalia-form .formio-error-wrapper {
+  padding: 0;
+}
+
+.dalia-form {
+  width: 100%;
+}
+
+.dalia-forms-container {
+  height: 100%;
+}
+
+.dalia-form-shadow {
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.dalia-form-shadow form {
+  max-height: 100%;
+}
+
+#form-container {
+  padding: 0;
+}
+
+.dalia-landing {
+  position: relative;
+  height: calc(100vh - 80px);
+}
+
+.dalia-landing .content {
+  background: var(--content);
+  padding: 160px 70px 0 190px;
+  height: calc(100% + 80px);
+  left: -40px;
+  top: -40px;
+}
+
+.dalia-loading,
+.dalia-landing-thanks {
+  padding-top: 45vh;
+  text-align: center;
+  background-color: var(--white);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.dalia-form-footer,
+.dalia-close-button,
+.dalia-client-logo,
+.dalia-loading-logo,
+.help-block,
+.mapboxgl-ctrl-geocoder--icon,
+.button-icon-right {
+  display: none;
+}
+
+.formio-component-submit .submit-fail::after {
+  content: '';
+}
+
+.col-form-label {
+  font-size: 13px;
+  color: var(--label);
+}
+
+.powered-by {
+  text-align: right;
+}
+
+.powered-by a,
+.dalia-terms a {
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.powered-by a {
+  font-weight: bold;
+  color: var(--brand);
+}
+
+.dalia-form .form-control,
+.dalia-form .mapboxgl-ctrl-geocoder input {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 0.25rem;
+  height: 38px !important;
+  line-height: 38px !important;
+}
+
+.mapboxgl-ctrl-geocoder {
+  min-width: auto;
+}
+
+.mapboxgl-ctrl-geocoder--input {
+  padding: 10px;
+}
+
+.spacer {
+  padding-top: 195px;
+}
+
+.logo-image {
+  width: 245px;
+  margin-bottom: 60px;
+}
+
+.custom-bullet {
+  color: var(--label);
+  line-height: 33px;
+  list-style-image: url('/images/blue-tick.png');
+  padding-left: 23px;
+}
+
+.sign-up-text {
+  color: var(--accent);
+}
+
+.text {
+  color: var(--text);
+  line-height: 25px;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  width: 160px;
+  height: 40px;
+  font-size: 15px;
+  margin-top: 15px;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+@media (min-width: 991px) and (max-width: 1270px) {
+  .dalia-landing .content {
+    padding: 160px 70px 0 85px;
+  }
+}
+
+@media (max-width: 991px) {
+  .dalia-landing {
+    height: auto;
+  }
+
+  .dalia-landing .content {
+    padding: 70px 60px;
+    position: relative;
+    width: calc(100% + 80px);
+  }
+
+  .spacer {
+    padding-top: 0;
+  }
+
+  .powered-by {
+    text-align: left;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+  }
+
+  .dalia-form-shadow {
+    padding: 30px;
+    overflow: hidden;
+    overflow-y: visible;
+  }
+
+  .dalia-form-shadow form {
+    overflow: visible;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-image {
+    max-width: 100%;
+  }
+}
