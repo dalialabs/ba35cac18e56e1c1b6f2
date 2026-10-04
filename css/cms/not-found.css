@@ -1,0 +1,60 @@
+body, html {
+    background-color: var(--main-bg) !important;
+}
+
+.container {
+    max-width: 800px;
+}
+
+.not-found {
+    margin: 4rem .5rem;
+    text-align: center;
+    cursor: default;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .05);
+}
+
+.not-found:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .05);
+    transform: scale(1);
+}
+
+.not-found h1 {
+    display: inline-block;
+    font-size: 8em;
+    font-weight: bold;
+    background: var(--main);
+    background: linear-gradient(120deg, var(--main) 40%, white 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.not-found h2 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.not-found p {
+    color: #858585;
+}
+
+.not-found a {
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    border-color: var(--btn-bg);
+    color: var(--btn-bg);
+}
+
+.not-found a:hover {
+    border-color: var(--btn-bg);
+    background: var(--btn-bg);
+    color: white;
+}
+
+.not-found a:focus {
+    box-shadow: 0 0 0 0.25rem rgb(0 0 0 / 20%) !important;
+}
+
+.angle-down-icon {
+  color: var(--main);
+}
