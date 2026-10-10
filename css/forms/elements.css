@@ -1,0 +1,116 @@
+.list-inline .list-inline-item {
+  display: none;
+}
+
+.formio-wizard-nav-container {
+  display: block;
+}
+
+.formio-wizard-nav-container.list-inline > li {
+  width: 100%;
+}
+
+.list-inline .list-inline-item:last-child {
+  display: block;
+  width: 100%;
+}
+
+.dalia-form .control-label--hidden,
+.dalia-form .btn-wizard-nav-cancel,
+.dalia-form .btn-wizard-nav-previous {
+  display: none;
+}
+
+.dalia-form input,
+.dalia-form button {
+  font-size: 16px;
+}
+
+
+.dalia-form .w-65 {
+  width: 65%!important;
+  margin-right: 6px
+}
+
+.dalia-form .btn-skip {
+  width: 32%;
+  border-radius: 40px;
+  height: 50px;
+}
+
+.dalia-form .btn-wizard-nav-next {
+  width: 100%;
+  background-color: #293795;
+  border-color: #293795;
+  border-radius: 40px;
+}
+
+.dalia-form .btn-wizard-nav-next:hover {
+  background-color: #2937b4;
+  border-color: #2937b4;
+}
+
+.btn-wizard-nav-submit {
+  width: 100%;
+  background-color: #293795;
+  border-color: #293795;
+  border-radius: 40px;
+}
+
+.btn-wizard-nav-submit:hover {
+  background-color: #2937b4;
+  border-color: #2937b4;
+}
+
+.dalia-form .form-control,
+.dalia-form .mapboxgl-ctrl-geocoder input {
+  background-color: #f3f3f3;
+  border-color: #f3f3f3;
+  color: #495057;
+  font-size: 14px;
+  line-height: 3em;
+  height: 3.5em;
+}
+
+.dalia-form .form-group {
+  margin-bottom: 0.5rem;
+}
+
+.dalia-form h6 {
+  text-align: center;
+  margin: 0.5em;
+  font-size: 14px;
+}
+
+.dalia-form-footer, .footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  padding: 0 0.2rem;
+}
+
+.dalia-form-footer .form-close,  .footer .skip {
+  text-decoration: underline;
+  color: #000;
+  cursor: pointer;
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  outline: none;
+}
+
+.dalia-form-footer .powered-by a, .footer .powered-by a {
+  text-decoration: none;
+  color: #7410ed;
+}
+
+.dalia-form-prev {
+  margin-bottom: 0.5em;
+}
+
+.dalia-form .mapboxgl-ctrl-geocoder {
+  width: 100%;
+  max-width: 100%;
+  box-shadow: none;
+  margin-bottom: 0.5rem;
+}

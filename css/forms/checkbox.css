@@ -1,0 +1,70 @@
+.slider-checkbox {
+  height: 3em;
+  display: flex;
+  align-items: center;
+}
+
+.slider-checkbox input {
+  margin: 0;
+  margin-top: 1px;
+  cursor: pointer;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  z-index: 1;
+  background: red;
+}
+
+.slider-checkbox span {
+  position: relative;
+  padding-left: 46px;
+}
+
+.slider-checkbox span::before {
+  content: "";
+  color: #fff;
+  box-sizing: border-box;
+  padding-left: 23px;
+  font-size: 12px;
+  line-height: 20px;
+  background-color: #888;
+  left: 0;
+  top: 0;
+  height: 20px;
+  width: 40px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  position: absolute;
+  transition: background-color 0.3s, left 0.3s;
+}
+
+.slider-checkbox span::after {
+  content: "";
+  letter-spacing: 20px;
+  background: #fff;
+  left: 1px;
+  top: 1px;
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s, left 0.3s;
+}
+
+.slider-checkbox input:checked + span::before {
+  background-color: #1877c1;
+  padding-left: 6px;
+}
+
+.slider-checkbox input:checked + span::after {
+  left: 21px;
+}
+
+.slider-checkbox .form-check {
+  padding-left: 0;
+}
