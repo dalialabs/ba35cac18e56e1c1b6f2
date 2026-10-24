@@ -1,0 +1,232 @@
+.input-text input,
+.input-number input,
+.input-decimal input,
+.input-password input,
+.input-date input,
+.input-email input,
+.input-checkbox input,
+.input select,
+.input-decimal {
+  border: none;
+  outline: none;
+}
+
+.input input {
+  font-size: 1.2em;
+  box-sizing: border-box;
+  border: none;
+}
+
+input[type="date"] {
+  height: 49px;
+}
+
+.input.input-invalid {
+  border-bottom: 0.15em solid red;
+}
+
+input.autocomplete:invalid {
+  border-bottom: 0.15em solid red;
+}
+
+.input-radio input,
+.input-radio label {
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  font-size: 2em;
+}
+
+.input {
+  outline: none;
+  height: 4em;
+}
+
+.input-date label {
+  visibility: visible;
+}
+
+.input-checkbox label {
+  visibility: visible;
+  color: var(--dark);
+  font-size: 1.2em;
+  position: relative;
+  top: 0.3em;
+  left: 1.2em;
+}
+
+.input input[type="text"],
+.input input[type="date"],
+.input input[type="password"],
+.input select {
+  margin: 0;
+}
+
+.input:focus-within label.display-none {
+  display: none;
+}
+
+.form-actions button,
+.form-actions a {
+  align-self: center;
+}
+
+.input-checkbox {
+  line-height: 4em;
+}
+
+.input-checkbox input[type="checkbox"]::before {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  content: "";
+  background: var(--white);
+}
+
+.input-checkbox input[type="checkbox"]::after {
+  position: relative;
+  display: block;
+  top: -16px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--dark-grey);
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.input-checkbox input[type="checkbox"]:checked::after {
+  background-image: url("/img/default/check.svg");
+  background-size: 10px 10px;
+  border: 1px solid var(--text-dark);
+}
+
+.inputs-row .input {
+  flex-basis: 8%;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px white inset !important;
+}
+
+.icon {
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+  padding: var(--padding);
+  align-self: center;
+}
+
+.add-icon {
+  background: url("/img/default/add-icon.svg") center no-repeat;
+}
+
+.delete-icon {
+  background: url("/img/default/delete-icon.svg") center no-repeat;
+}
+
+.validation-error {
+  position: absolute;
+  margin-top: 0.1em;
+}
+
+.new-tab {
+  background: url("/img/default/new-tab.svg") center no-repeat;
+  padding: 5px;
+  margin: 5px;
+}
+
+.autocomplete-item {
+  display: flex;
+}
+
+.autocomplete-item .align-right {
+  margin-left: auto;
+}
+
+.input-hidden {
+  display: none;
+}
+
+.form-note {
+  padding: var(--half-padding);
+}
+
+.reset-form {
+  padding: 1.8rem 1rem 0.6rem;
+  font-size: 1.2em;
+}
+
+.flex-inputs {
+  display: flex;
+}
+
+.flex-inputs > div {
+  flex: 1 1 auto;
+}
+
+.flex-inputs .fg-5 {
+  flex-grow: 5;
+}
+
+#map-box .mapboxgl-ctrl-geocoder {
+  box-shadow: none;
+  width: 100%;
+}
+
+#map-box .mapboxgl-ctrl-geocoder:hover,
+#map-box .mapboxgl-ctrl-geocoder:focus-within {
+  background-color: var(--field-background-hover);
+}
+
+#map-box .mapboxgl-ctrl-geocoder--icon {
+  top: 40px;
+}
+
+#map-box .mapboxgl-ctrl-geocoder--icon-search {
+  display: none;
+}
+
+#map-box .mapboxgl-ctrl-geocoder--input {
+  padding: 1.3rem 1rem 0.4rem;
+  width: 100%;
+  height: 100%;
+}
+
+#map-box .mapboxgl-ctrl-geocoder--button {
+  top: 20px;
+}
+
+.inputs-row {
+  font-size: 0.9em;
+}
+
+.tags-select-box {
+  margin: 10px;
+  height: 35px;
+}
+
+.password-with-show-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.password-with-show {
+  border: none;
+  flex: 8;
+  outline: none;
+}
+
+.password-with-show-toggle {
+  flex: 3;
+  font: normal normal normal 10px/20px Poppins;
+  letter-spacing: 0px;
+  color: #6f00ff;
+  cursor: pointer;
+}
