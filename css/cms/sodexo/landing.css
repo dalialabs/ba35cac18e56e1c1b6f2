@@ -1,0 +1,502 @@
+@import url(sodexo.css);
+.header-1 {
+  font-size: 3.5rem;
+}
+
+.header-2 {
+  font-size: 2rem;
+}
+
+.text-red {
+  color: #FF0101;
+}
+
+.btn-primary {
+  background-color: var(--main) !important;
+  border-color: var(--main) !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-blue) !important;
+  border-color: var(--dark-blue) !important;
+}
+
+.bg-light-blue {
+  background-color: var(--light-blue);
+}
+
+.side-img-1 {
+  background-image: url(/images/cms/sodexo/side.svg);
+  background-repeat: no-repeat;
+  background-position: 100% bottom;
+}
+
+.side-img-2 {
+  background-image: url(/images/cms/sodexo/side2.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 25%;
+}
+
+.side-img-3 {
+  background-image: url(/images/cms/sodexo/side3.svg);
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+
+.pt-10 {
+  padding-top: 6rem;
+}
+
+.landing-section {
+  min-height: 200px;
+  overflow-x: hidden;
+}
+
+.landing-section a {
+  text-decoration: none;
+}
+
+.form-control-with-button {
+  position: relative;
+  max-width: 30rem;
+}
+
+.form-control-with-button .form-control {
+  width: 100%;
+  max-width: 100%;
+}
+
+.form-control-with-button > button {
+  position: absolute;
+  top: .3rem;
+  right: .3rem;
+  bottom: .3rem;
+  padding: 0 1.5rem;
+  border-radius: .25rem;
+}
+
+.form-control.search {
+  padding-left: 3rem;
+  background: url(/images/icon-search.png) no-repeat 1rem center, white;
+}
+
+.section-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-1:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: .6rem;
+  background: #020024;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(2, 0, 36, 0.2)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(0deg, rgba(2, 0, 36, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.section-1 .col-xl-6:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-2 {
+  padding: 3rem 0;
+}
+
+.section-2 .header {
+  max-width: 35rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.section-2 img {
+  width: 100%;
+  max-height: 15rem;
+  margin-bottom: 3rem;
+}
+
+.section-2 .job-item {
+  text-align: center;
+}
+
+.section-2 .job-item .img {
+  width: 10rem;
+  height: 10rem;
+  min-width: 10rem;
+  min-height: 10rem;
+  margin: 0 auto 1rem auto;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.section-2 .job-item .img img {
+  height: 100%;
+  min-width: 100%;
+  width: auto;
+}
+
+.section-2 .job-item button {
+  padding: .6rem 1.3rem;
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+}
+
+.section-3 {
+  position: relative;
+  padding: 3rem 0;
+}
+
+.section-3:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: .6rem;
+  background: #020024;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(rgba(2, 0, 36, 0.2)));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(2, 0, 36, 0.2) 100%);
+}
+
+.section-4 {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.section-4 .learn-more-sec {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 12rem;
+  min-height: 10rem;
+  padding: 1rem 1.5rem;
+  margin: 0 auto 3rem auto;
+  background: white;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.section-4 .learn-more-sec img {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: .7rem;
+}
+
+.container-small {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-5 .video-thumbnail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 350px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  background: url(/images/cms/sodexo/video-thumbnail.svg) no-repeat center center;
+  background-size: cover;
+}
+
+.section-5 .video-thumbnail > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 7rem;
+  height: 7rem;
+  margin-bottom: 1.5rem;
+  font-size: 2em;
+  color: red;
+  background: white;
+  border-radius: 50%;
+}
+
+.section-6 {
+  position: relative;
+  padding: 4rem 0;
+}
+
+.section-6:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: .6rem;
+  background: #020024;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(rgba(2, 0, 36, 0.2)));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(2, 0, 36, 0.2) 100%);
+}
+
+.section-6 .btn {
+  max-width: 15rem;
+  padding: .5rem;
+  border-radius: .5rem;
+}
+
+.section-6 .col-xl-4 {
+  text-align: right;
+}
+
+.section-7 {
+  min-height: auto;
+}
+
+.section-7 img {
+  width: 100%;
+}
+
+.section-8 {
+  position: relative;
+  padding: 4rem 0;
+}
+
+.section-8:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: .6rem;
+  background: #020024;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(rgba(2, 0, 36, 0.2)));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(2, 0, 36, 0.2) 100%);
+}
+
+.section-8 .form-control-with-button {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.section-9 {
+  padding: 4rem 0;
+}
+
+.section-9 .twitter-feed {
+  height: 450px;
+  margin-top: 3rem;
+  overflow: auto;
+}
+
+#talentPopup .modal-content {
+  border: none;
+  border-radius: 0;
+}
+
+#talentPopup .modal-body {
+  padding: 0;
+}
+
+#talentPopup .btn-close {
+  position: absolute;
+  top: 0.7rem;
+  left: 0;
+  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+}
+
+#talentPopup .column:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4rem 3rem;
+  background: var(--main);
+  color: white;
+}
+
+#talentPopup .column:last-child {
+  padding: .5rem 3rem 1rem;
+  background: white;
+}
+
+#talentPopup .column:last-child .form-logo {
+  display: block;
+  height: 3rem;
+  margin: 0 auto 2rem auto;
+}
+
+#talentPopup .column:last-child .form-control {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+#talentPopup .column:last-child button {
+  margin-top: 1rem;
+}
+
+#talentPopup .note {
+  margin-top: 1rem;
+  font-size: .7em;
+  text-align: center;
+}
+
+#talentPopup .powered-by {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 8rem;
+  padding: .2rem .4rem;
+  margin-top: 1rem;
+  background: #F1F1F1;
+  font-size: .7em;
+  border-radius: 3rem;
+}
+
+#talentPopup .powered-by img {
+  height: 14px;
+  margin-left: .3rem;
+}
+
+@media screen and (max-width: 1199px) {
+  .landing-section {
+    background-image: none;
+  }
+  .section-1 .col-xl-6:first-child {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-1 .col-xl-6:first-child .headers {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .section-1 .col-xl-6:first-child .headers h1 {
+    display: inline;
+    margin-right: 1rem;
+  }
+  .section-1 .col-xl-6:first-child .form-control-with-button {
+    width: 100%;
+  }
+  .section-1 .col-xl-6:last-child {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  .section-1 .col-xl-6:last-child img {
+    max-width: 90%;
+  }
+  .section-5 .col-xl-4 {
+    text-align: center;
+  }
+  .section-6 .col-xl-6 {
+    text-align: center;
+  }
+  .section-6 .col-xl-6 a {
+    margin: 0 auto;
+    min-width: 15rem;
+  }
+  .section-6 .col-xl-4 {
+    text-align: center;
+  }
+  .section-6 .col-xl-4 img {
+    border-radius: 1rem;
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-2 {
+    text-align: center;
+  }
+  .section-2 .job-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .section-2 .job-item .img {
+    width: 7rem;
+    height: 7rem;
+    min-width: 7rem;
+    min-height: 7rem;
+    margin: 0 1rem 0 0;
+  }
+  .section-2 .job-item button {
+    margin-bottom: 0;
+  }
+  .section-3 {
+    text-align: center;
+  }
+  .section-7 .hide {
+    display: none;
+  }
+  .section-8 .col-md-12 .d-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-8 .col-md-12 .d-flex .form-control-with-button {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .section-9 .col-md-6:last-child {
+    margin-top: 3rem;
+  }
+}

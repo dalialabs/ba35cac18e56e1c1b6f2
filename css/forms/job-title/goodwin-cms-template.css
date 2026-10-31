@@ -1,0 +1,31 @@
+.input-holder {
+    padding-left: 0;
+    height: auto;
+    min-height: auto;
+    background: none;
+    border: none;
+    margin-bottom: 0;
+    line-height: normal;
+    cursor: text;
+}
+
+.search-input {
+    height: auto;
+    background: white;
+    padding: 0.7rem 0.5rem;
+    line-height: 1.5;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    font-family: 'Lato';
+}
+
+::placeholder {
+    color: #00263E;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.badge {
+  margin-left: 0.5rem;
+}
