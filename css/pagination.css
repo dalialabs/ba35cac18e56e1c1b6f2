@@ -1,0 +1,28 @@
+.pagination {
+  text-align: center;
+  margin: 1em;
+}
+
+.pagination a {
+  padding: 0 1em;
+}
+
+.simple-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.simple-pagination .current-records {
+  font: normal normal normal 18px/37px "Poppins";
+  letter-spacing: 0px;
+  color: #000000;
+  margin: 0;
+}
+
+.simple-pagination .current-records .total-records {
+  font: normal normal normal 18px/37px "Poppins";
+  letter-spacing: 0px;
+  color: #bebbbb;
+}
