@@ -1,0 +1,155 @@
+:root {
+  --theme-color: #23282F;
+  --theme-color-light: #333b46;
+}
+
+body {
+  overflow: hidden;
+}
+
+.adminjs_Box {
+  border-radius: 5px;
+}
+
+/* Login */
+section[class*="login__Wrapper"] > section > section {
+  background: var(--theme-color);
+}
+
+section[class*="login__Wrapper"] label {
+  color: white;
+}
+
+/* Sidebar */
+.adminjs_Logo {
+  padding: 17px 10px;
+  background: #333b46;
+}
+
+div#app > section > section:first-child {
+  background: var(--theme-color);
+  color: rgba(255, 255, 255, .6);
+}
+
+div#app > section > section:first-child > section > section {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+div#app > section > section:first-child a {
+  color: white;
+  background: transparent;
+}
+
+div#app > section > section:first-child a svg {
+  fill: white;
+}
+
+div#app > section > section:first-child a + ul a {
+  color: rgba(255, 255, 255, .8);
+}
+
+div#app > section > section:last-child {
+  position: relative;
+}
+
+.adminjs_Button {
+  border-radius: 5px;
+}
+
+.adminjs_Logo img {
+  width: 85px;
+}
+
+form.adminjs_Box > section:first-child {
+  border: solid thin #DDE1E5;
+}
+
+form.adminjs_Box > section:last-child {
+  position: sticky;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: -1px;
+  background: white;
+  padding: 15px;
+  text-align: right;
+  border: solid thin #DDE1E5;
+  z-index: 11;
+}
+
+.export-container {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.json-editor {
+  height: 25rem;
+  margin-bottom: 3rem;
+  border: solid thin rgb(0 0 0 / .2);
+}
+
+textarea.adminjs_Input {
+  min-height: 10rem;
+}
+
+td section {
+  min-width: 40px !important;
+}
+
+section[data-testid="property-list-active"] .adminjs_Badge,
+section[data-testid="property-list-setting"] .adminjs_Badge {
+  display: block !important;
+  min-width: 25px;
+  text-align: center;
+}
+
+.apply-for-job-input {
+  display: block;
+  margin-bottom: 40px;
+  height: 45px;
+  width: 100%;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.apply-for-job-submit {
+  width: 200px;
+  height: 45px;
+  background-color: #248bf5;
+  border: 1px solid;
+  color: #FFF;
+  border-radius: 40px;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.chat-iframe {
+  width: 100%;
+  height: 100%;
+}
+
+section[data-testid="property-list-setting"] .adminjs_Badge {
+  min-width: 60px;
+}
+
+#json-editor-container {
+  border: solid thin #C0C0CA;
+}
+
+#json-editor-labels {
+  background: #F7F7F7;
+  border-right: solid thin #C0C0CA;
+  text-align: right;
+  padding-right: 10px !important;
+}
+
+.multiselect-list {
+  width: 100%;
+  height: 20rem;
+  margin-bottom: 3rem;
+}
+
+.ace_gutter {
+  z-index: 0;
+}

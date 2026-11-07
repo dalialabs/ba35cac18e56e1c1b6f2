@@ -1,0 +1,46 @@
+.input-holder {
+    position: relative;
+    min-height: 56px;
+    padding-left: 38px;
+    margin-bottom: 0;
+    border: 1px solid #ced4da;
+    background: url(/images/icon-search.png) no-repeat scroll 12px 18px, white;
+}
+
+.search-input {
+    height: 38px;
+    font-size: 1em;
+    font-family: inherit;
+    background: white;
+    padding-left: .5em;
+
+}
+
+.active {
+    background-color: var(--btn-bg) !important;
+}
+
+.dropdown-menu {
+    left: 0;
+    margin-left: -1px;
+    border-radius: 0 0 0.25rem 0.25rem;
+    z-index: 9999;
+}
+
+.badge {
+    padding: 0.4em 0.6em;
+    color: white;
+    background-color: var(--job-input-theme);
+    margin: 0 .2rem .55rem 0;
+}
+
+.container-element {
+    padding: .5rem 0 0;
+}
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+    .container-element {
+        padding: 0;
+    }
+}}

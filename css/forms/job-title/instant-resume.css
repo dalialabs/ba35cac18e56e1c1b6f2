@@ -1,0 +1,39 @@
+.input-holder {
+  background-color: var(--white);
+  border: 1px solid black;
+  padding: 0 0.9rem 0.5rem;
+}
+
+.container-element > .search-input {
+  font-weight: bolder;
+  background-color: var(--white);
+  padding-top: 0.5rem;
+}
+
+.dropdown-menu {
+  width: calc(100% - 82px);
+  left: 3.5rem;
+  border-top: 0;
+  border-radius: 0;
+  border-radius: 0 0 0.5rem 0.5rem;
+  border-color: black;
+  margin-left: -1rem;
+  margin-top: -0.2rem;
+}
+
+.badge {
+  background-color: var(--dark-purple);
+  max-width: 12rem;
+  padding: 0.2em 0.6em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  line-height: 1.3em;
+  text-align: left;
+}
+
+.active {
+  background-color: var(--dark-purple) !important;
+}
