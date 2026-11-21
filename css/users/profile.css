@@ -1,0 +1,302 @@
+.user-header {
+  padding: 3rem;
+  background: #F5F5F5;
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.user-header svg {
+  margin-bottom: 1.5rem;
+}
+
+.settings {
+  margin-top: 2rem;
+}
+
+.nav-pills {
+  position: -webkit-sticky;
+  position: sticky;
+  top: calc(90px + 2rem);
+}
+
+.nav-pills .nav-link {
+  --bs-nav-link-padding-y: 1rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+  background-color: #F5F5F5;
+  color: black;
+  border-radius: .8rem;
+  font-size: 1.2rem;
+  text-align: left;
+  line-height: .7em;
+}
+
+.nav-pills .nav-link svg {
+  margin-right: .8rem;
+}
+
+.nav-pills .nav-link svg path {
+  fill: var(--theme-primary);
+}
+
+.nav-pills .nav-link::after {
+  content: '';
+  display: inline;
+  position: absolute;
+  right: .95rem;
+  top: 50%;
+  border-right: 2px solid var(--theme-primary);
+  border-bottom: 2px solid var(--theme-primary);
+  width: 10px;
+  height: 10px;
+  -webkit-transform: rotate(-45deg) translateY(-50%);
+          transform: rotate(-45deg) translateY(-50%);
+}
+
+.nav-pills .nav-link.active {
+  --bs-nav-pills-link-active-bg: var(--theme-primary);
+}
+
+.nav-pills .nav-link.active svg path {
+  fill: white;
+}
+
+.nav-pills .nav-link.active::after {
+  border-color: white;
+}
+
+.card {
+  margin-bottom: 3.5rem;
+  border-radius: var(--border-radius);
+  -webkit-box-shadow: 0 0 15px 1px var(--theme-light);
+          box-shadow: 0 0 15px 1px var(--theme-light);
+  border: none;
+}
+
+.card .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  background: transparent;
+}
+
+.card .card-header h4 {
+  margin: 0;
+}
+
+.card .card-header .btn-light {
+  --bs-btn-border-width: 0;
+  --bs-btn-bg: white;
+  --bs-btn-border-color: white;
+  --bs-btn-hover-bg: #e4e4e4;
+  --bs-btn-hover-border-color: white;
+  --bs-btn-active-bg: #ccc;
+  --bs-btn-active-border-color: white;
+  padding: .4rem 1rem;
+  margin-right: -1rem;
+  color: #A2A2A2;
+}
+
+.card .card-body {
+  padding: 2rem;
+  border-color: #DBDBDB;
+}
+
+.card .card-actions {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+label {
+  color: var(--theme-primary);
+  margin-bottom: .4rem;
+}
+
+.form-control {
+  --bs-border-color: #C9C9C9;
+  padding: .7rem .75rem;
+  margin-bottom: 1.5rem;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; */
+  margin-bottom: 2rem;
+}
+
+.slider span {
+  position: relative;
+  max-width: 3.7rem;
+  padding: .4rem 1.2rem;
+  margin-left: .1rem;
+  font-size: 1em;
+}
+
+.slider span::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 5px 7px 5px;
+  border-color: transparent transparent var(--theme-primary) transparent;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+input[type="range"] {
+  display: block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  height: 3px;
+  margin: 1rem 0;
+  background: #C9C9C9;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  width: 20px;
+  height: 20px;
+  background: var(--theme-primary);
+  border-radius: 100%;
+  -webkit-box-shadow: 0px 0px 10px var(--theme-light);
+          box-shadow: 0px 0px 10px var(--theme-light);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  background: var(--theme-primary);
+  border-radius: 100%;
+  -webkit-box-shadow: 0px 0px 10px var(--theme-light);
+          box-shadow: 0px 0px 10px var(--theme-light);
+}
+
+.resume-container.has-resume {
+  padding: 1rem 1rem 1rem 2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.resume-container.has-resume > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.resume-container.has-resume .btn {
+  padding: 1rem 1.2rem;
+  border-radius: 1rem;
+  margin-left: .6rem;
+}
+
+.resume-container.has-resume .btn img {
+  margin: 0;
+}
+
+.resume-container.has-resume .btn-danger {
+  --bs-btn-border-width: 0;
+  --bs-btn-bg: #E75F5A26;
+  --bs-btn-border-color: #E75F5A26;
+  --bs-btn-hover-bg: #cf484426;
+  --bs-btn-hover-border-color: #cf484426;
+  --bs-btn-active-bg: #92242026;
+  --bs-btn-active-border-color: #92242026;
+}
+
+.resume-container p {
+  display: inline-block;
+  margin: .7rem 0 .7rem .7rem;
+}
+
+.job-list {
+  padding: 0 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.job-list .job-item:hover {
+  background: white !important;
+}
+
+.job-list .job-item::before {
+  top: auto !important;
+  bottom: 0;
+}
+
+.job-list .job-item:last-of-type::before {
+  display: none;
+}
+
+.password-toggle {
+  position: relative;
+}
+
+.password-toggle input {
+  padding-right: 2.3rem;
+}
+
+.password-toggle img {
+  position: absolute;
+  top: 50%;
+  right: .5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.location-error {
+  padding: 10px 15px;
+  margin: 10px 0;
+  background-color: #d73131;
+  color: white;
+  border-radius: 5px;
+}
+
+.location-error img {
+  float: right;
+}
+
+
+@media screen and (min-width: 640px) {
+  .mapboxgl-ctrl-geocoder {
+    width: 100%;
+    max-width: none;
+  }
+}
